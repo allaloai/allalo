@@ -1,0 +1,24 @@
+[
+  {
+    "id": "age-calculator",
+    "title": "Age Calculator Pro",
+    "name": "Age Calculator Pro",
+    "category": "utility",
+    "theme": "theme-purple",
+    "description": "Calculate your exact age in years, months, and days dynamically based on birthdate.",
+    "url": "tools/age-calculator.html",
+    "link": "tools/age-calculator.html",
+    "blogUrl": "blog-post/how-to-choose-best-ai-agent-2026.html"
+  },
+  {
+    "id": "bmi-calculator",
+    "title": "BMI Health Calculator",
+    "name": "BMI Health Calculator",
+    "category": "utility",
+    "theme": "theme-emerald",
+    "description": "Evaluate body mass index and ideal weight range instantly with health recommendations.",
+    "url": "tools/bmi-calculator.html",
+    "link": "tools/bmi-calculator.html",
+    "blogUrl": "blog-post/rise-of-local-ai-models.html"
+  }
+]

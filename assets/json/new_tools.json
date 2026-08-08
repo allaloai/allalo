@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Artlist AI",
+    "link": "https://artlist.io/",
+    "logo": "https://artlist.io/",
+    "category": "AI Agent",
+    "description": "Artlist AI is a browser-based creative suite that lets creators generate and edit images, videos, music, and voiceovers in one place.",
+    "releaseDate": "2026-07-26",
+    "isFeatured": true,
+    "expireTimestamp": 1785000000000,
+    "badge": "FEATURED",
+    "approvalStatus": "Approved"
+  },
+  {
+    "name": "Blog2Video",
+    "link": "https://blog2video.app/",
+    "logo": "https://blog2video.app/",
+    "category": "AI Agent",
+    "description": "Blog2Video is a web app at blog2video.app that turns existing blog posts into videos for reuse on video-friendly channels.",
+    "releaseDate": "2026-07-25",
+    "isFeatured": false,
+    "expireTimestamp": null,
+    "badge": "ACTIVE",
+    "approvalStatus": "Approved"
+  }
+]
