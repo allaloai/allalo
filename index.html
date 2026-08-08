@@ -1,0 +1,2217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="dynamicMetaTitle">allalo AI — 21,821+ AI Tools Directory & Search Engine</title>
+    <meta id="dynamicMetaDesc" name="description" content="Explore and compare 21,821+ verified AI tools, autonomous agents, and Edge models in our smart mega directory with instant search.">
+    <meta name="keywords" content="ai tools list, free ai directory, artificial intelligence apps, ai agents, crewai, ollama, best ai websites, free chatgpt, allalo ai">
+    <meta name="author" content="Jasim Uddin">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#030712">
+
+    <!-- PWA Web Manifest Link -->
+    <link rel="manifest" href="/manifest.json">
+
+    <link rel="canonical" href="https://ai.allalo.com/">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://ai.allalo.com/favicon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://ai.allalo.com/favicon.png">
+
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Open Graph / Social Media Preview -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="allalo AI">
+    <meta property="og:url" content="https://ai.allalo.com/">
+    <meta property="og:title" content="21,821+ Verified AI Tools & Autonomous Agents — allalo AI">
+    <meta property="og:description" content="Search & discover 21,821+ AI tools, agents, swarms, and Edge models instantly on allalo AI directory.">
+    <meta property="og:image" content="https://ai.allalo.com/logo.png">
+
+    <!-- Twitter Preview -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://ai.allalo.com/">
+    <meta name="twitter:title" content="allalo AI — 21,821+ AI Tools Directory">
+    <meta name="twitter:description" content="Discover 21,821+ AI models, autonomous swarms, and local AI utilities with Google-speed filtering.">
+    <meta name="twitter:image" content="https://ai.allalo.com/logo.png">
+
+    <!-- Schema Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "allalo AI",
+      "url": "https://ai.allalo.com/",
+      "logo": "https://ai.allalo.com/logo.png"
+    }
+    </script>
+    <script type="application/ld+json" id="defaultSchema">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "https://ai.allalo.com/#website",
+          "url": "https://ai.allalo.com/",
+          "name": "allalo AI Search Engine & Directory",
+          "description": "Explore 21,821+ verified AI tools and autonomous applications instantly.",
+          "potentialAction": [{
+            "@type": "SearchAction",
+            "target": {
+              "@type": "EntryPoint",
+              "urlTemplate": "https://ai.allalo.com/?search={search_term_string}"
+            },
+            "query-input": "required name=search_term_string"
+          }]
+        },
+        {
+          "@type": "DataCatalog",
+          "@id": "https://ai.allalo.com/#datacatalog",
+          "name": "allalo AI Tools Directory",
+          "description": "Comprehensive indexing catalog of 21,821+ AI applications, autonomous swarms, and local models.",
+          "url": "https://ai.allalo.com/"
+        }
+      ]
+    }
+    </script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        :root {
+            --bg-color: #030712;
+            --bg-secondary: #0a0f1c;
+            --card-bg: rgba(15, 23, 42, 0.6);
+            --card-border: rgba(99, 102, 241, 0.15);
+            --text-primary: #f1f5f9;
+            --text-secondary: #94a3b8;
+            --text-muted: #64748b;
+            --accent-primary: #6366f1;
+            --accent-secondary: #8b5cf6;
+            --accent-glow: rgba(99, 102, 241, 0.4);
+            --success: #10b981;
+            --warning: #f59e0b;
+            --danger: #ef4444;
+            --glass-bg: rgba(15, 23, 42, 0.7);
+            --glass-border: rgba(255, 255, 255, 0.08);
+        }
+
+        body.light-mode {
+            --bg-color: #f8fafc;
+            --bg-secondary: #f1f5f9;
+            --card-bg: rgba(255, 255, 255, 0.7);
+            --card-border: rgba(99, 102, 241, 0.2);
+            --text-primary: #0f172a;
+            --text-secondary: #475569;
+            --text-muted: #64748b;
+            --glass-bg: rgba(255, 255, 255, 0.75);
+            --glass-border: rgba(0, 0, 0, 0.08);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-secondary);
+            overflow-x: hidden;
+            transition: background-color 0.4s ease, color 0.4s ease;
+            min-height: 100vh;
+        }
+
+        .bg-mesh {
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            z-index: -1;
+            overflow: hidden;
+            pointer-events: none;
+        }
+        .bg-mesh::before {
+            content: '';
+            position: absolute;
+            top: -50%; left: -50%;
+            width: 200%; height: 200%;
+            background:
+                radial-gradient(circle at 20% 50%, rgba(99, 102, 241, 0.08) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(139, 92, 246, 0.06) 0%, transparent 50%),
+                radial-gradient(circle at 50% 80%, rgba(16, 185, 129, 0.04) 0%, transparent 50%);
+            animation: meshFloat 20s ease-in-out infinite;
+        }
+        @keyframes meshFloat {
+            0%, 100% { transform: translate(0, 0) rotate(0deg); }
+            33% { transform: translate(2%, 2%) rotate(1deg); }
+            66% { transform: translate(-1%, 1%) rotate(-1deg); }
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Space Grotesk', sans-serif;
+            color: var(--text-primary);
+            font-weight: 700;
+        }
+
+        .theme-toggle-btn {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 999;
+            background: var(--glass-bg);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid var(--glass-border);
+            color: var(--text-primary);
+            padding: 10px 18px;
+            border-radius: 50px;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 13px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .theme-toggle-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba(99, 102, 241, 0.25);
+            border-color: var(--accent-primary);
+        }
+
+        .site-header { padding-top: 80px; padding-bottom: 20px; }
+        .brand-logo {
+            width: 64px; height: 64px;
+            border-radius: 18px;
+            background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            font-weight: 800;
+            color: white;
+            box-shadow: 0 8px 32px rgba(99, 102, 241, 0.3);
+            animation: logoPulse 3s ease-in-out infinite;
+        }
+        @keyframes logoPulse {
+            0%, 100% { box-shadow: 0 8px 32px rgba(99, 102, 241, 0.3); }
+            50% { box-shadow: 0 8px 40px rgba(99, 102, 241, 0.5); }
+        }
+        .site-title {
+            font-size: clamp(2.5rem, 5vw + 1rem, 4rem);
+            font-weight: 800;
+            letter-spacing: -0.03em;
+            background: linear-gradient(135deg, var(--text-primary) 0%, var(--accent-primary) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .site-subtitle {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--accent-primary);
+        }
+        .status-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: rgba(16, 185, 129, 0.1);
+            border: 1px solid rgba(16, 185, 129, 0.2);
+            color: var(--success);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+        .status-badge::before {
+            content: '';
+            width: 6px; height: 6px;
+            background: var(--success);
+            border-radius: 50%;
+            animation: statusBlink 2s ease-in-out infinite;
+        }
+        @keyframes statusBlink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.4; }
+        }
+
+        .search-section { margin-bottom: 40px; }
+        .search-root-container {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .search-input-box { position: relative; width: 100%; }
+        .main-input {
+            width: 100%;
+            height: 58px;
+            border: 2px solid var(--card-border);
+            background: var(--glass-bg);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border-radius: 50px;
+            padding-left: 56px;
+            padding-right: 100px;
+            font-size: 15px;
+            color: var(--text-primary);
+            font-weight: 500;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            outline: none;
+        }
+        .main-input::placeholder { color: var(--text-muted); font-weight: 400; }
+        .main-input:focus {
+            border-color: var(--accent-primary);
+            box-shadow: 0 0 0 4px var(--accent-glow), 0 8px 32px rgba(99, 102, 241, 0.15);
+            background: var(--glass-bg);
+        }
+        .searchicon {
+            position: absolute;
+            left: 22px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 5;
+            color: var(--text-muted);
+            font-size: 18px;
+            pointer-events: none;
+            transition: color 0.3s;
+        }
+        .search-input-box:focus-within .searchicon { color: var(--accent-primary); }
+        .clear-search-btn {
+            position: absolute;
+            right: 64px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: transparent;
+            border: 0;
+            color: var(--text-muted);
+            font-size: 14px;
+            cursor: pointer;
+            z-index: 6;
+            display: none;
+            width: 28px; height: 28px;
+            border-radius: 50%;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.2s;
+        }
+        .clear-search-btn:hover {
+            background: rgba(239, 68, 68, 0.1);
+            color: var(--danger);
+        }
+        .microphone {
+            position: absolute;
+            right: 18px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 34px; height: 34px;
+            background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+            border-radius: 50%;
+            cursor: pointer;
+            z-index: 5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: none;
+            color: white;
+            font-size: 14px;
+            box-shadow: 0 4px 15px rgba(99, 102, 241, 0.3);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .microphone:hover {
+            transform: translateY(-50%) scale(1.1);
+            box-shadow: 0 6px 25px rgba(99, 102, 241, 0.5);
+        }
+        .microphone.recording { animation: micPulse 1.2s ease-in-out infinite; }
+        @keyframes micPulse {
+            0%, 100% { box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.7); }
+            50% { box-shadow: 0 0 0 12px rgba(239, 68, 68, 0); }
+        }
+
+        .icon-holder {
+            display: none;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 20px;
+            animation: fadeSlideUp 0.4s ease-out;
+        }
+        @keyframes fadeSlideUp {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .search-root-container.focused .icon-holder,
+        .search-root-container.has-content .icon-holder { display: flex; }
+
+        .icon-text-tab {
+            background: var(--glass-bg);
+            backdrop-filter: blur(10px);
+            border: 1px solid var(--glass-border);
+            color: var(--text-secondary);
+            padding: 10px 20px;
+            border-radius: 50px;
+            font-size: 13px;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            user-select: none;
+        }
+        .icon-text-tab:hover {
+            background: rgba(99, 102, 241, 0.1);
+            border-color: var(--accent-primary);
+            color: var(--accent-primary);
+            transform: translateY(-2px);
+        }
+        .icon-text-tab.active {
+            background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+            border-color: transparent;
+            color: #fff !important;
+            box-shadow: 0 4px 20px rgba(99, 102, 241, 0.3);
+        }
+        .tab-counter-badge {
+            font-size: 10px;
+            opacity: 0.8;
+            font-weight: 500;
+            background: rgba(255,255,255,0.2);
+            padding: 2px 8px;
+            border-radius: 10px;
+        }
+
+        .tag-chips-wrapper {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 14px;
+        }
+        .chip-btn {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px dashed var(--glass-border);
+            color: var(--text-muted);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 11px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .chip-btn:hover, .chip-btn.active {
+            background: rgba(99, 102, 241, 0.15);
+            border-color: var(--accent-primary);
+            color: var(--accent-primary);
+        }
+
+        .filter-bar {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin-top: 24px;
+            flex-wrap: wrap;
+        }
+        .btn-glass {
+            background: var(--glass-bg);
+            backdrop-filter: blur(10px);
+            border: 1px solid var(--glass-border);
+            color: var(--text-secondary);
+            padding: 10px 20px;
+            border-radius: 50px;
+            font-size: 13px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .btn-glass:hover {
+            background: rgba(99, 102, 241, 0.1);
+            border-color: var(--accent-primary);
+            color: var(--accent-primary);
+            transform: translateY(-1px);
+        }
+        .dropdown-menu {
+            background: var(--glass-bg);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--glass-border);
+            border-radius: 16px;
+            padding: 8px;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+        }
+        .dropdown-item {
+            color: var(--text-secondary);
+            border-radius: 10px;
+            padding: 10px 16px;
+            font-size: 13px;
+            font-weight: 500;
+            transition: all 0.2s;
+        }
+        .dropdown-item:hover {
+            background: rgba(99, 102, 241, 0.1);
+            color: var(--accent-primary);
+        }
+
+        .carousel-section { margin-bottom: 50px; }
+        .carousel-container-block {
+            background: var(--card-bg);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid var(--card-border);
+            border-radius: 24px;
+            padding: 28px;
+            box-shadow: 0 8px 40px rgba(0,0,0,0.2);
+        }
+        .mini-release-circle {
+            width: 56px; height: 56px;
+            border-radius: 16px;
+            background: var(--bg-secondary);
+            border: 1px solid var(--glass-border);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 8px auto;
+            overflow: hidden;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .mini-release-circle:hover {
+            transform: scale(1.15) rotate(5deg);
+            border-color: var(--accent-primary);
+            box-shadow: 0 8px 25px rgba(99, 102, 241, 0.2);
+        }
+        .mini-release-img { width: 100%; height: 100%; object-fit: cover; }
+        .carousel-tool-name {
+            font-size: 11px;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin: 0;
+            max-width: 100%;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .section-title {
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--text-primary);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 24px;
+        }
+        .section-title::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: linear-gradient(90deg, var(--card-border), transparent);
+        }
+
+        .app-card-anchor {
+            text-decoration: none !important;
+            color: inherit !important;
+            display: block;
+            height: 100%;
+        }
+        .app-card {
+            background: var(--card-bg);
+            backdrop-filter: blur(12px);
+            border: 1px solid var(--card-border);
+            border-radius: 20px;
+            padding: 20px;
+            min-height: 160px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+            content-visibility: auto;
+            contain-intrinsic-size: 160px;
+        }
+        .app-card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--accent-primary), var(--accent-secondary));
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        .app-card:hover {
+            border-color: var(--accent-primary);
+            transform: translateY(-6px);
+            box-shadow: 0 20px 40px rgba(99, 102, 241, 0.15);
+        }
+        .app-card:hover::before { opacity: 1; }
+        .featured-card-style {
+            background: linear-gradient(135deg, rgba(99, 102, 241, 0.1) 0%, var(--card-bg) 100%) !important;
+            border: 1px solid rgba(99, 102, 241, 0.3) !important;
+        }
+        body.light-mode .featured-card-style {
+            background: linear-gradient(135deg, rgba(99, 102, 241, 0.05) 0%, var(--card-bg) 100%) !important;
+        }
+        .featured-badge-tag {
+            background: linear-gradient(135deg, var(--warning), #f97316);
+            color: #000;
+            font-size: 9px;
+            font-weight: 800;
+            padding: 3px 10px;
+            border-radius: 20px;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+        
+        .app-card-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 8px;
+            width: 100%;
+        }
+
+        .app-card-title-wrapper {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            min-width: 0;
+            flex: 1;
+        }
+
+        .app-card-title {
+            font-size: 13px;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin: 0;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            min-width: 0;
+        }
+
+        .app-card-badge {
+            flex-shrink: 0;
+        }
+
+        .card-action-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 12px;
+            padding-top: 8px;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .fav-btn, .compare-btn, .info-btn {
+            background: transparent;
+            border: none;
+            color: var(--text-muted);
+            font-size: 11px;
+            cursor: pointer;
+            transition: color 0.2s, transform 0.2s;
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+        }
+        .fav-btn.active { color: #ef4444 !important; }
+        .compare-btn.active { color: var(--accent-primary) !important; font-weight: bold; }
+        .fav-btn:hover { color: #ef4444; transform: scale(1.1); }
+        .compare-btn:hover, .info-btn:hover { color: var(--accent-primary); }
+
+        .load-more-btn {
+            background: var(--glass-bg);
+            backdrop-filter: blur(10px);
+            border: 1px solid var(--glass-border);
+            color: var(--text-secondary);
+            padding: 12px 32px;
+            border-radius: 50px;
+            font-size: 13px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        .load-more-btn:hover {
+            background: rgba(99, 102, 241, 0.1);
+            border-color: var(--accent-primary);
+            color: var(--accent-primary);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(99, 102, 241, 0.15);
+        }
+
+        /* SEO Rich Text Section (AdSense Compliance) */
+        .seo-rich-block {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 24px;
+            padding: 32px;
+            margin-top: 60px;
+            margin-bottom: 40px;
+        }
+        .seo-rich-block h2 { font-size: 1.5rem; margin-bottom: 16px; color: var(--text-primary); }
+        .seo-rich-block h3 { font-size: 1.1rem; margin-top: 24px; margin-bottom: 12px; color: var(--accent-primary); }
+        .seo-rich-block p { font-size: 14px; line-height: 1.7; color: var(--text-secondary); }
+        .accordion-button {
+            background: var(--bg-secondary) !important;
+            color: var(--text-primary) !important;
+            border-radius: 12px !important;
+            box-shadow: none !important;
+            font-size: 14px;
+            font-weight: 600;
+        }
+        .accordion-item {
+            background: transparent !important;
+            border: 1px solid var(--card-border) !important;
+            border-radius: 12px !important;
+            margin-bottom: 10px;
+            overflow: hidden;
+        }
+        .accordion-body { color: var(--text-secondary); font-size: 13px; line-height: 1.6; }
+
+        .compare-float-bar {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 990;
+            background: var(--glass-bg);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--accent-primary);
+            padding: 10px 24px;
+            border-radius: 50px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            animation: slideUp 0.3s ease-out;
+        }
+        @keyframes slideUp { from { transform: translate(-50%, 50px); opacity: 0; } to { transform: translate(-50%, 0); opacity: 1; } }
+
+        .site-footer {
+            background: var(--bg-secondary);
+            border-top: 1px solid var(--card-border);
+            padding: 40px 0 30px;
+            margin-top: 60px;
+        }
+        .footer-link-custom {
+            color: var(--text-muted) !important;
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: 500;
+            transition: all 0.3s;
+            position: relative;
+            cursor: pointer;
+        }
+        .footer-link-custom:hover { color: var(--accent-primary) !important; }
+        .footer-link-custom::after {
+            content: '';
+            position: absolute;
+            bottom: -4px; left: 0;
+            width: 0; height: 2px;
+            background: var(--accent-primary);
+            transition: width 0.3s;
+            border-radius: 2px;
+        }
+        .footer-link-custom:hover::after { width: 100%; }
+
+        .modal-content {
+            background: var(--glass-bg) !important;
+            backdrop-filter: blur(30px) !important;
+            -webkit-backdrop-filter: blur(30px) !important;
+            border: 1px solid var(--glass-border) !important;
+            border-radius: 24px !important;
+            box-shadow: 0 25px 60px rgba(0,0,0,0.4) !important;
+        }
+        .modal-header {
+            border-bottom: 1px solid var(--glass-border) !important;
+            padding: 24px;
+        }
+        .modal-body {
+            padding: 24px;
+            color: var(--text-secondary);
+            font-size: 14px;
+            line-height: 1.7;
+        }
+        .modal-title {
+            color: var(--text-primary) !important;
+            font-family: 'Space Grotesk', sans-serif;
+        }
+        .btn-close-white { filter: invert(1) grayscale(100%) brightness(200%); }
+
+        #consoleModalOverlay .text-muted {
+            color: var(--text-secondary) !important;
+            opacity: 0.9;
+        }
+
+        #consoleModalOverlay .col-4 span.text-muted {
+            color: var(--text-primary) !important;
+            font-weight: 500;
+        }
+
+        .console-terminal {
+            background: #090d16 !important;
+            border: 1px solid var(--glass-border) !important;
+            border-radius: 16px;
+            padding: 16px;
+            height: 160px;
+            overflow-y: auto;
+            font-family: 'SF Mono', 'Fira Code', monospace;
+            font-size: 12px;
+            line-height: 1.6;
+            color: var(--text-secondary);
+        }
+        .console-terminal::-webkit-scrollbar { width: 6px; }
+        .console-terminal::-webkit-scrollbar-track { background: transparent; }
+        .console-terminal::-webkit-scrollbar-thumb { background: var(--card-border); border-radius: 3px; }
+
+        .console-terminal .text-secondary {
+            color: #a3b8cc !important;
+        }
+
+        #consoleModalOverlay .form-control, 
+        #consoleModalOverlay .form-select {
+            background: var(--bg-secondary) !important;
+            border: 1px solid var(--card-border) !important;
+            color: var(--text-primary) !important;
+        }
+
+        #consoleModalOverlay .form-control::placeholder {
+            color: var(--text-muted) !important;
+            opacity: 0.8;
+        }
+
+        body.light-mode #consoleModalOverlay .text-muted {
+            color: #475569 !important;
+        }
+
+        body.light-mode .console-terminal {
+            background: #0f172a !important;
+        }
+
+        body.light-mode .console-terminal .text-secondary {
+            color: #cbd5e1 !important;
+        }
+
+        .progress {
+            background: var(--bg-secondary) !important;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .progress-bar {
+            background: linear-gradient(90deg, var(--accent-primary), var(--accent-secondary)) !important;
+            border-radius: 10px;
+        }
+
+        .form-control, .form-select {
+            background: var(--bg-secondary) !important;
+            border: 1px solid var(--glass-border) !important;
+            color: var(--text-primary) !important;
+            border-radius: 12px !important;
+            font-size: 13px;
+            padding: 10px 14px;
+            transition: all 0.3s;
+        }
+        .form-control:focus, .form-select:focus {
+            border-color: var(--accent-primary) !important;
+            box-shadow: 0 0 0 3px var(--accent-glow) !important;
+        }
+        .form-control::placeholder { color: var(--text-muted) !important; }
+
+        .loading-state { text-align: center; padding: 60px 20px; }
+        .loading-spinner {
+            width: 40px; height: 40px;
+            border: 3px solid var(--card-border);
+            border-top-color: var(--accent-primary);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 16px;
+        }
+        @keyframes spin { to { transform: rotate(360deg); } }
+
+        .line-clamp-2 {
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        @media (max-width: 576px) {
+            .search-root-container { padding: 0 12px; }
+            .main-input { height: 52px; padding-left: 48px; padding-right: 90px; font-size: 14px; }
+            .icon-text-tab { padding: 8px 14px; font-size: 12px; }
+            .carousel-container-block { padding: 16px; border-radius: 16px; }
+            .app-card { min-height: 150px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-mesh"></div>
+
+    <button type="button" class="theme-toggle-btn" id="themeToggleBtn" onclick="toggleThemeMode()">
+        <span id="themeIcon">🌙</span> <span id="themeText">Dark</span>
+    </button>
+
+    <header class="container site-header text-center">
+        <div class="d-flex align-items-center justify-content-center gap-4 mb-3">
+            <div class="brand-logo">A</div>
+            <div class="text-start">
+                <h1 class="site-title m-0">allalo AI</h1>
+                <p class="site-subtitle m-0 mt-1">The Ultimate Smart AI Directory</p>
+            </div>
+        </div>
+        <div class="d-flex align-items-center justify-content-center gap-3 mt-3">
+            <span class="status-badge">Live & Active</span>
+            <span class="text-secondary" style="font-size: 13px;">Indexed: <strong class="text-white bg-dark p-1 mb-1 rounded" id="topCounter">0</strong> tools</span>
+        </div>
+    </header>
+
+    <section class="container search-section text-center">
+        <div class="search-root-container" id="searchWrapper">
+            <div class="search-input-box">
+                <span class="searchicon">⌕</span>
+                <input type="text" id="searchInput" placeholder="Search AI models, agents, swarms..." class="main-input" autocomplete="off">
+                <button type="button" id="clearSearchBtn" class="clear-search-btn" onclick="clearSearchField()" aria-label="Clear search">✕</button>
+                <button class="microphone" id="voiceBtn" onclick="startVoiceSearch()" aria-label="Voice search">🎤</button>
+            </div>
+
+            <div class="icon-holder">
+                <div class="icon-text-tab active" id="btn-All" onclick="filterByCategory('All')">📊 All <span class="tab-counter-badge" id="cnt-all">(...)</span></div>
+                <div class="icon-text-tab" id="btn-AI_Agent" onclick="filterByCategory('AI Agent')">🤖 Agents <span class="tab-counter-badge" id="cnt-agent">(...)</span></div>
+                <div class="icon-text-tab" id="btn-AI_Swarm" onclick="filterByCategory('AI Swarm')">👥 Swarms <span class="tab-counter-badge" id="cnt-swarm">(...)</span></div>
+                <div class="icon-text-tab" id="btn-Local_AI" onclick="filterByCategory('Local AI')">🔒 Local <span class="tab-counter-badge" id="cnt-local">(...)</span></div>
+                <div class="icon-text-tab" id="btn-Favorites" onclick="filterByFavorites()">❤️ Favorites <span class="tab-counter-badge" id="cnt-fav">(0)</span></div>
+            </div>
+
+            <div class="tag-chips-wrapper">
+                <button class="chip-btn" onclick="filterByTag('free')">#Free</button>
+                <button class="chip-btn" onclick="filterByTag('open source')">#OpenSource</button>
+                <button class="chip-btn" onclick="filterByTag('multilingual')">#Multilingual</button>
+                <button class="chip-btn" onclick="filterByTag('no signup')">#NoSignUp</button>
+                <button class="chip-btn" onclick="filterByTag('api')">#APIAvailable</button>
+            </div>
+        </div>
+
+        <div class="filter-bar">
+            <div class="dropdown">
+                <button class="btn-glass dropdown-toggle" type="button" id="releaseDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                    🌟 Featured
+                </button>
+                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="releaseDropdown">
+                    <li><button class="dropdown-item" onclick="filterByRelease('featured')">⭐ Featured</button></li>
+                    <li><button class="dropdown-item" onclick="filterByRelease('today')">📅 Today</button></li>
+                    <li><button class="dropdown-item" onclick="filterByRelease('week')">📆 This Week</button></li>
+                    <li><button class="dropdown-item" onclick="filterByRelease('month')">🗓️ This Month</button></li>
+                    <li><button class="dropdown-item" onclick="filterByRelease('year')">📊 This Year</button></li>
+                </ul>
+            </div>
+            <button class="btn-glass" data-bs-toggle="modal" data-bs-target="#consoleModalOverlay" onclick="openConsoleModal()">
+                📊 Search Console
+            </button>
+        </div>
+    </section>
+
+    <section class="container carousel-section" id="dynamicCarouselZone">
+        <div class="row justify-content-center">
+            <div class="col-12 col-xl-9">
+                <div class="carousel-container-block">
+                    <div id="unifiedCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+                        <div class="carousel-inner" id="unifiedCarouselInner"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main class="container mb-5">
+        <h5 class="section-title">📂 Global Master Index</h5>
+
+        <div id="loading" class="loading-state">
+            <div class="loading-spinner"></div>
+            <p class="text-muted font-mono" style="font-size: 13px;">Syncing distributed cluster databases...</p>
+        </div>
+
+        <div id="toolsGrid" class="row g-3 d-none"></div>
+
+        <div class="text-center mt-5 pb-4 d-none" id="loadMoreContainer">
+            <button id="loadMoreBtn" class="load-more-btn">Load Next Wave ⬇️</button>
+        </div>
+
+        <!-- Google AdSense & SEO Content Section (Rich Text Compliance) -->
+        <section class="seo-rich-block mt-5">
+            <h2>Explore Over 21,821+ Verified AI Tools & Autonomous Agents</h2>
+            <p>Welcome to <strong>allalo AI</strong>, the central search engine and directory built for artificial intelligence applications, autonomous swarms, developer utility web tools, and local LLM frameworks. Our automated indexing engine parses verified tools daily, ensuring developers, creators, and business executives find high-performing solutions effortlessly.</p>
+
+            <h3>Featured AI Asset Categories</h3>
+            <div class="row g-3 my-2">
+                <div class="col-12 col-md-4">
+                    <div class="p-3 rounded-4 bg-dark bg-opacity-25 border border-secondary border-opacity-10 h-100">
+                        <h4 class="fs-6 text-white fw-bold mb-2">🤖 Autonomous Agents</h4>
+                        <p class="mb-0" style="font-size:12px;">Discover self-governing AI workflows, agentic frameworks, and multi-step task execution systems like Devin AI and AutoGPT.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="p-3 rounded-4 bg-dark bg-opacity-25 border border-secondary border-opacity-10 h-100">
+                        <h4 class="fs-6 text-white fw-bold mb-2">👥 AI Swarms & Collaborators</h4>
+                        <p class="mb-0" style="font-size:12px;">Orchestrate intelligent agent teams with tools like CrewAI and AutoGen for complex software development and creative pipelines.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="p-3 rounded-4 bg-dark bg-opacity-25 border border-secondary border-opacity-10 h-100">
+                        <h4 class="fs-6 text-white fw-bold mb-2">🔒 Offline & Local Models</h4>
+                        <p class="mb-0" style="font-size:12px;">Run open-source LLMs privately on hardware using Ollama, LM Studio, and Jan AI with total privacy compliance.</p>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="mt-4 mb-3">Frequently Asked Questions (FAQ)</h3>
+            <div class="accordion" id="faqAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                            What is allalo AI Search Directory?
+                        </button>
+                    </h2>
+                    <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            allalo AI is an automated discovery platform indexing over 21,821+ artificial intelligence applications, autonomous agents, and utility web tools across global developer pipelines.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                            Are the tools listed on allalo AI free to use?
+                        </button>
+                    </h2>
+                    <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Yes! Most tools listed in our master index offer free tiers, open-source codebases, or freemium web access. You can filter by #Free or #OpenSource directly in the search bar.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                            How often is the 21,821+ database updated?
+                        </button>
+                    </h2>
+                    <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Our cluster sync pipelines run continuously to append newly released AI frameworks, update active link statuses, and eliminate duplicate entries automatically.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="compareFloatBar" class="compare-float-bar d-none">
+        <span class="text-white font-mono" style="font-size: 12px;"><strong id="compareCount">0</strong> / 3 selected for matrix comparison</span>
+        <button type="button" class="btn btn-sm btn-light rounded-pill font-mono fw-bold px-3" onclick="openComparisonModal()">⚔️ Compare Selected</button>
+        <button type="button" class="btn-close btn-close-white" style="font-size: 10px;" onclick="clearComparisonList()"></button>
+    </div>
+
+    <!-- Site Footer with Accurate Structural Links -->
+    <footer class="site-footer text-center">
+        <div class="container">
+            <div class="d-flex justify-content-center flex-wrap gap-4 mb-4">
+                <a href="about.html" class="footer-link-custom fw-bold" target="_blank">ℹ️ About Us</a>
+                <a href="blog.html" class="footer-link-custom fw-bold" target="_blank">✍️ Blog</a> 
+                <a href="toolspro.html" class="footer-link-custom fw-bold" target="_blank">🛠 Tools Pro</a>
+                <a href="privacy-policy.html" class="footer-link-custom" target="_blank">🛡️ Privacy Policy</a>
+                <a href="terms.html" class="footer-link-custom" target="_blank">📄 Terms & Conditions</a>
+                <a onclick="openModal('contactModal')" class="footer-link-custom">📧 Contact Us</a>
+            </div>
+            <p class="m-0 text-indigo-600" style="font-size: 12px;">&copy; 2026 Allalo AI Search Engine. Developed by Jasim Uddin. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Modals -->
+    <div id="modalOverlay" class="modal fade" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTitle">System Window</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="modalContent"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="toolDetailModal" class="modal fade" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title font-mono text-info" id="toolDetailTitle">Tool Overview</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close" onclick="resetDynamicUrl()"></button>
+                </div>
+                <div class="modal-body" id="toolDetailContent"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="comparisonModalOverlay" class="modal fade" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title font-mono text-info">⚔️ AI Tool Comparative Analysis Matrix</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="comparisonModalContent"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="consoleModalOverlay" class="modal fade" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title font-mono text-info">⚡ Unified Search Console Framework</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body font-mono" style="font-size: 12px;">
+
+                    <div class="mb-4">
+                        <div class="d-flex justify-content-between text-muted mb-2" style="font-size: 10px; text-transform: uppercase; letter-spacing: 0.1em;">
+                            <span>Cluster Sync Progress</span>
+                            <span id="progressPercent">0%</span>
+                        </div>
+                        <div class="progress" style="height: 6px;">
+                            <div id="indexingBar" class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 0%"></div>
+                        </div>
+                    </div>
+
+                    <div class="row g-3 mb-4 text-center">
+                        <div class="col-4">
+                            <div class="p-3 rounded-4" style="background: var(--bg-secondary); border: 1px solid var(--glass-border);">
+                                <span class="text-muted d-block mb-1" style="font-size: 10px; text-transform: uppercase;">Indexed</span>
+                                <span id="consoleTotalCount" class="fw-bold fs-5" style="color: var(--text-primary);">0</span>
+                                <span class="text-muted" style="font-size: 11px;">nodes</span>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="p-3 rounded-4" style="background: var(--bg-secondary); border: 1px solid var(--glass-border);">
+                                <span class="text-muted d-block mb-1" style="font-size: 10px; text-transform: uppercase;">Pipelines</span>
+                                <span id="consolePipelineCount" class="fw-bold fs-5" style="color: var(--success);">0</span>
+                                <span class="text-muted" style="font-size: 11px;">active</span>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="p-3 rounded-4" style="background: var(--bg-secondary); border: 1px solid var(--glass-border);">
+                                <span class="text-muted d-block mb-1" style="font-size: 10px; text-transform: uppercase;">Status</span>
+                                <span class="fw-bold fs-5" style="color: var(--accent-primary);">Live</span>
+                                <span class="text-muted" style="font-size: 11px;">synced</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-4">
+                        <label class="d-block mb-2" style="color: var(--accent-primary); font-size: 11px; text-transform: uppercase; letter-spacing: 0.1em;">📟 Real-Time Logs</label>
+                        <div id="consoleLogs" class="console-terminal"></div>
+                    </div>
+
+                    <ul class="nav nav-tabs border-0 mb-3 gap-2" id="dashboardTab" role="tablist">
+                        <li class="nav-item">
+                            <button class="nav-link active px-4 py-2 rounded-pill" id="dev-tab" data-bs-toggle="tab" data-bs-target="#devPanel" type="button" role="tab" style="background: var(--bg-secondary); border: 1px solid var(--glass-border); color: var(--text-secondary); font-size: 12px; font-weight: 600;">📥 Developer Submit</button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-link px-4 py-2 rounded-pill" id="admin-tab" data-bs-toggle="tab" data-bs-target="#adminPanel" type="button" role="tab" onclick="unlockAdminPanel()" style="background: var(--bg-secondary); border: 1px solid var(--glass-border); color: var(--text-secondary); font-size: 12px; font-weight: 600;">🔒 Admin Center</button>
+                        </li>
+                    </ul>
+
+                    <div class="tab-content" id="dashboardTabContent">
+                        <div class="tab-pane fade show active" id="devPanel" role="tabpanel">
+                            <form action="https://formspree.io/f/YOUR_FORM_ID_HERE" method="POST" class="row g-3">
+                                <div class="col-12 col-md-6">
+                                    <input type="text" name="toolName" placeholder="AI Tool Name *" required class="form-control">
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <input type="url" name="toolLink" placeholder="Website URL *" required class="form-control">
+                                </div>
+                                <div class="col-12">
+                                    <textarea name="toolDesc" rows="3" placeholder="Describe your AI tool... *" required class="form-control"></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn w-100 fw-bold" style="background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary)); color: white; border: none; border-radius: 12px; padding: 12px;">🚀 Submit Tool</button>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="tab-pane fade" id="adminPanel" role="tabpanel">
+                            <div id="adminAccessState" class="d-none">
+                                <div class="row g-3">
+                                    <div class="col-12 col-md-6">
+                                        <label class="text-muted d-block mb-1" style="font-size: 11px;">Tool Name</label>
+                                        <input type="text" id="admName" placeholder="E.g. Devin AI" class="form-control">
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <label class="text-muted d-block mb-1" style="font-size: 11px;">Website URL</label>
+                                        <input type="url" id="admLink" placeholder="https://..." class="form-control">
+                                    </div>
+                                    <div class="col-12 col-md-4">
+                                        <label class="text-muted d-block mb-1" style="font-size: 11px;">Category</label>
+                                        <select id="admCat" class="form-select">
+                                            <option value="AI Agent">AI Agent</option>
+                                            <option value="AI Swarm">AI Swarm</option>
+                                            <option value="Local AI">Local AI</option>
+                                            <option value="General AI">General AI</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12 col-md-4">
+                                        <label class="text-muted d-block mb-1" style="font-size: 11px;">Featured Duration</label>
+                                        <select id="admLease" class="form-select">
+                                            <option value="normal">None</option>
+                                            <option value="24">24 Hours</option>
+                                            <option value="168">1 Week</option>
+                                            <option value="720">1 Month</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12 col-md-4">
+                                        <label class="text-muted d-block mb-1" style="font-size: 11px;">Status</label>
+                                        <select id="admStatus" class="form-select">
+                                            <option value="Approved">Approved</option>
+                                            <option value="Pending">Pending</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12">
+                                        <label class="text-muted d-block mb-1" style="font-size: 11px;">Description</label>
+                                        <textarea id="admDesc" rows="2" placeholder="Tool description..." class="form-control"></textarea>
+                                    </div>
+                                    <div class="col-12 mt-2 d-flex gap-2">
+                                        <button type="button" onclick="generateAdminJson()" class="btn flex-grow-1 fw-bold" style="background: linear-gradient(135deg, var(--success), #059669); color: white; border: none; border-radius: 12px;">⚡ Generate JSON</button>
+                                        <button type="button" onclick="clearAdminFields()" class="btn" style="background: var(--bg-secondary); border: 1px solid var(--glass-border); color: var(--text-secondary); border-radius: 12px;">Reset</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="adminLockedState" class="text-center py-5">
+                                <div style="font-size: 40px; margin-bottom: 12px;">🔐</div>
+                                <p class="text-danger m-0 fw-bold">System Locked</p>
+                                <p class="text-muted mt-1" style="font-size: 12px;">Authorization required to access admin controls.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
+    <script>
+const DASHBOARD_URL = 'https://cdn.jsdelivr.net/gh/golgain/allalo-ai@main/new_tools.json?v=' + Date.now();
+
+const MASTER_URLS = [
+    'https://raw.githubusercontent.com/allaloai/allalo/refs/heads/main/assets/json/ai_ag_25k.json', 
+    'https://raw.githubusercontent.com/allaloai/allalo/refs/heads/main/assets/json/ai_to_3k.json', 
+    'https://raw.githubusercontent.com/allaloai/allalo/refs/heads/main/assets/json/ai_to_19k.json',
+    'https://raw.githubusercontent.com/allaloai/allalo/refs/heads/main/assets/json/new_tools.json',
+	'https://raw.githubusercontent.com/allaloai/allalo/refs/heads/main/assets/json/tools--blog--data.json',
+	'https://raw.githubusercontent.com/allaloai/allalo/refs/heads/main/assets/json/bangla-tools.json'
+	
+];
+
+let allTools = [], filteredTools = [], dashboardDbList = [];
+let currentCategory = 'All', currentSearchQuery = '', currentTimelineMode = 'featured';
+let limit = 30, offset = 0;
+let consoleLogStorage = [];
+let resizeTimer = null, searchDebounceTimer = null;
+let fuseEngine = null;
+
+let userFavorites = JSON.parse(localStorage.getItem('allalo_favorites') || '[]');
+let compareSelectedList = [];
+
+const superstarTools = ['chatgpt','midjourney','claude','sora','devin','crewai','bolt.new','perplexity','ollama','lm studio','autogen','looka','canva','elevenlabs','suno','runway'];
+
+const stopWords = new Set(["how", "to", "i", "can", "a", "an", "the", "for", "my", "is", "what", "which", "where", "best", "top", "find", "me", "show", "give", "with", "and", "or", "in", "on", "of", "build", "make", "create", "need", "want", "help", "please", "tool", "tools", "ai", "online", "app", "website", "generate", "generator"]);
+
+const dictionary = {
+    'logo': ['logo', 'brand', 'identity', 'watermark', 'vector', 'favicon', 'graphic', 'design', 'looka', 'brandmark'],
+    'thumbnail': ['thumbnail', 'banner', 'youtube', 'cover', 'poster', 'canva'],
+    'image': ['image', 'photo', 'picture', 'art', 'midjourney', 'dall-e', 'flux', 'draw', 'illustration'],
+    'bg': ['background', 'remove bg', 'transparent', 'cutout', 'bg remover'],
+    'background': ['bg', 'background', 'remover', 'transparent', 'cutout'],
+    'noise': ['denoise', 'audio cleanup', 'voice enhancement', 'clean audio', 'sound clear'],
+    'audio': ['sound', 'music', 'voice', 'speech', 'song', 'tts', 'podcast', 'denoise'],
+    'video': ['video', 'movie', 'clip', 'anim', 'reel', 'tiktok', 'shorts', 'sora', 'runway', 'pika'],
+    'write': ['writer', 'writing', 'copywriting', 'script', 'essay', 'article', 'blog', 'text'],
+    'code': ['coding', 'developer', 'programming', 'script', 'html', 'css', 'js', 'python', 'fix bug', 'copilot'],
+    'agent': ['agent', 'autonomous', 'swarm', 'crewai', 'autogen', 'devin'],
+    'local': ['ollama', 'lm studio', 'offline', 'private', 'llama', 'edge'],
+    'multilingual': ['multilingual', 'bangla', 'bengali', 'hindi', 'spanish', 'french', 'arabic', 'translation', 'language']
+};
+
+const searchInputEl = document.getElementById('searchInput');
+const searchWrapperEl = document.getElementById('searchWrapper');
+const clearSearchBtnEl = document.getElementById('clearSearchBtn');
+
+function escapeHTML(str) {
+    if (!str) return '';
+    return str.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+}
+
+function sanitizeUrl(url) {
+    if (!url) return '';
+    var t = url.trim();
+    if (!t || t === '#' || t === 'https://aitoolbuzz.com' || t === 'https://aitoolbuzz.com/' || t.indexOf('aitoolbuzz.com') !== -1) return '';
+    var l = t.toLowerCase();
+    if (l.indexOf('javascript:') === 0 || l.indexOf('data:') === 0 || l.indexOf('vbscript:') === 0 || l.indexOf('file:') === 0) return '';
+    return t;
+}
+
+function getFallbackUrl(name) {
+    return 'https://www.google.com/search?q=' + encodeURIComponent((name || 'AI Tool') + ' AI Tool');
+}
+
+function updateProgrammaticSEO(keyword) {
+    const titleEl = document.getElementById('dynamicMetaTitle');
+    const descEl = document.getElementById('dynamicMetaDesc');
+    const months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+    const d = new Date();
+    const dateStr = months[d.getMonth()] + ' ' + d.getFullYear();
+
+    if (!keyword || keyword === 'All') {
+        document.title = `21,821+ Verified AI Tools & Apps Directory (${dateStr}) — allalo AI`;
+        if (descEl) descEl.setAttribute("content", "Explore 21,821+ verified AI tools, autonomous agents, and Edge models in our smart mega directory.");
+        return;
+    }
+
+    const cleanKw = keyword.replace('#', '').toUpperCase();
+    document.title = `Best ${cleanKw} AI Tools Directory (${dateStr}) — allalo AI`;
+    if (descEl) {
+        descEl.setAttribute("content", `Find and compare top ${cleanKw} AI applications, custom workflows, and open-source models on allalo AI.`);
+    }
+}
+
+function updateDynamicSEO() {
+    updateProgrammaticSEO(currentCategory !== 'All' ? currentCategory : currentSearchQuery);
+}
+
+function updateToolSEOAndUrl(tool, isPushState = true) {
+    if (!tool) return;
+    
+    const slug = encodeURIComponent(tool.name.toLowerCase().trim().replace(/\s+/g, '-'));
+    
+    if (isPushState) {
+        const newUrl = window.location.origin + window.location.pathname + '?tool=' + slug;
+        window.history.pushState({ toolName: tool.name }, '', newUrl);
+    }
+
+    document.title = `${tool.name} AI Tool — Features, Pricing & Review | allalo AI`;
+    
+    let metaDesc = document.querySelector('meta[name="description"]');
+    if (metaDesc) {
+        metaDesc.setAttribute("content", `${tool.name}: ${tool.short_description}. Category: ${tool.task}. Discover & compare on allalo AI directory.`);
+    }
+
+    let dynamicSchema = document.getElementById('dynamicToolSchema');
+    if (!dynamicSchema) {
+        dynamicSchema = document.createElement('script');
+        dynamicSchema.id = 'dynamicToolSchema';
+        dynamicSchema.type = 'application/ld+json';
+        document.head.appendChild(dynamicSchema);
+    }
+
+    dynamicSchema.text = JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": tool.name,
+        "applicationCategory": tool.task || "General AI",
+        "operatingSystem": "Web-based",
+        "description": tool.short_description,
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        }
+    });
+}
+
+function resetDynamicUrl() {
+    const cleanUrl = window.location.origin + window.location.pathname;
+    window.history.pushState(null, '', cleanUrl);
+    updateDynamicSEO();
+    let dynamicSchema = document.getElementById('dynamicToolSchema');
+    if (dynamicSchema) dynamicSchema.remove();
+}
+
+function openToolDetailModal(toolName, isPushState = true) {
+    const tool = allTools.find(t => t.name.toLowerCase() === toolName.toLowerCase());
+    if (!tool) return;
+
+    updateToolSEOAndUrl(tool, isPushState);
+
+    const titleEl = document.getElementById('toolDetailTitle');
+    const contentEl = document.getElementById('toolDetailContent');
+    const modalOverlay = document.getElementById('toolDetailModal');
+
+    if (titleEl) titleEl.innerText = tool.name;
+    
+    var toolUrl = tool.link ? tool.link.trim() : getFallbackUrl(tool.name);
+    var primaryLogo = tool.logo || 'https://www.google.com/s2/favicons?sz=128&domain=' + encodeURIComponent(toolUrl);
+
+    if (contentEl) {
+        contentEl.innerHTML = `
+            <div class="d-flex align-items-center gap-3 mb-4">
+                <img src="${escapeHTML(primaryLogo)}" class="rounded-3 bg-black p-2" style="width:56px;height:56px" onerror="this.onerror=null;this.src='https://www.google.com/s2/favicons?sz=128&domain=${encodeURIComponent(toolUrl)}'">
+                <div>
+                    <h4 class="text-white m-0">${escapeHTML(tool.name)}</h4>
+                    <span class="badge bg-indigo-500 text-white mt-1" style="font-size:11px">${escapeHTML(tool.task || 'General AI')}</span>
+                </div>
+            </div>
+            <div class="mb-4">
+                <h6 class="text-white font-mono" style="font-size:13px">Description:</h6>
+                <p class="text-secondary" style="font-size:13px; line-height:1.7">${escapeHTML(tool.short_description)}</p>
+            </div>
+            <div class="p-3 rounded-4 mb-4" style="background: var(--bg-secondary); border: 1px solid var(--glass-border);">
+                <div class="row g-2 text-xs" style="font-size:12px">
+                    <div class="col-6"><span class="text-muted">Status:</span> <strong class="text-success">${escapeHTML(tool.status || 'Active')}</strong></div>
+                    <div class="col-6"><span class="text-muted">Indexed Type:</span> <strong class="text-info">Verified Node</strong></div>
+                </div>
+            </div>
+            <div class="d-flex gap-2">
+                <a href="${escapeHTML(toolUrl)}" target="_blank" class="btn btn-primary flex-grow-1 rounded-pill font-mono fw-bold py-2">🚀 Launch Tool Website ↗</a>
+                <button type="button" class="btn btn-outline-light rounded-pill px-4" onclick="navigator.clipboard.writeText(window.location.href); alert('🔗 Shareable Tool URL copied!');">📋 Share</button>
+            </div>
+        `;
+    }
+
+    if (modalOverlay && window.bootstrap) {
+        const modalInstance = bootstrap.Modal.getOrCreateInstance(modalOverlay);
+        modalInstance.show();
+    }
+}
+
+function checkAndTriggerUrlTool() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const toolSlug = urlParams.get('tool');
+    if (toolSlug) {
+        const cleanName = decodeURIComponent(toolSlug).replace(/-/g, ' ');
+        openToolDetailModal(cleanName, false);
+    }
+}
+
+window.addEventListener('popstate', function(event) {
+    if (event.state && event.state.toolName) {
+        openToolDetailModal(event.state.toolName, false);
+    } else {
+        const detailModal = document.getElementById('toolDetailModal');
+        if (detailModal && window.bootstrap) {
+            const inst = bootstrap.Modal.getInstance(detailModal);
+            if (inst) inst.hide();
+        }
+        resetDynamicUrl();
+    }
+});
+
+function logToConsole(msg, type) {
+    var ts = new Date().toLocaleTimeString();
+    var cls = 'text-secondary';
+    if (type === 'success') cls = 'text-success fw-bold';
+    if (type === 'warn') cls = 'text-warning';
+    if (type === 'error') cls = 'text-danger fw-bold';
+    consoleLogStorage.push('<div class="' + cls + '">[' + ts + '] ' + escapeHTML(msg) + '</div>');
+    var el = document.getElementById('consoleLogs');
+    if (el) { el.innerHTML = consoleLogStorage.join(''); el.scrollTop = el.scrollHeight; }
+}
+
+function updateProgressBar(pct) {
+    var bar = document.getElementById('indexingBar');
+    var txt = document.getElementById('progressPercent');
+    if (bar) bar.style.width = pct + '%';
+    if (txt) txt.innerText = pct + '%';
+}
+
+function toggleThemeMode() {
+    document.body.classList.toggle('light-mode');
+    var btn = document.getElementById('themeToggleBtn');
+    if (btn) btn.innerText = document.body.classList.contains('light-mode') ? '☀️ Light' : '🌙 Dark';
+}
+
+function initFuseSearch() {
+    if (typeof Fuse === 'undefined') return;
+    const options = {
+        includeScore: true,
+        threshold: 0.35,
+        distance: 100,
+        ignoreLocation: true,
+        keys: [
+            { name: 'name', weight: 0.6 },
+            { name: 'task', weight: 0.3 },
+            { name: 'short_description', weight: 0.1 }
+        ]
+    };
+    fuseEngine = new Fuse(allTools, options);
+}
+
+function extractKeywords(query) {
+    return query
+        .toLowerCase()
+        .replace(/[^\w\s]/gi, '')
+        .split(/\s+/)
+        .filter(word => word.length > 1 && !stopWords.has(word));
+}
+
+function rankAndSortTools(results, userQuery) {
+    const rawKeywords = extractKeywords(userQuery);
+
+    return results.map(item => {
+        let tool = item.item || item;
+        let score = 0;
+        let nameLower = (tool.name || '').toLowerCase();
+        let taskLower = (tool.task || '').toLowerCase();
+        let descLower = (tool.short_description || '').toLowerCase();
+
+        rawKeywords.forEach(kw => {
+            if (nameLower === kw) score += 100;
+            if (nameLower.includes(kw)) score += 50;
+            if (taskLower.includes(kw)) score += 45;
+            if (descLower.includes(kw)) score += 20;
+
+            for (let key in dictionary) {
+                if (key === kw || dictionary[key].includes(kw)) {
+                    dictionary[key].forEach(syn => {
+                        if (nameLower.includes(syn)) score += 30;
+                        if (taskLower.includes(syn)) score += 25;
+                        if (descLower.includes(syn)) score += 10;
+                    });
+                }
+            }
+        });
+
+        if (superstarTools.some(pop => nameLower.includes(pop))) {
+            score += 15;
+        }
+
+        return { tool, score };
+    })
+    .sort((a, b) => b.score - a.score)
+    .map(entry => entry.tool);
+}
+
+async function loadMegaDatabase() {
+    try {
+        updateDynamicSEO();
+        updateProgressBar(5);
+        logToConsole('Initializing Dynamic Multi-Pipeline Engine...', 'info');
+
+        var consolePipeCount = document.getElementById('consolePipelineCount');
+        if (consolePipeCount) {
+            consolePipeCount.innerText = MASTER_URLS.length;
+        }
+
+        await fetchDashboardDatabase();
+        updateProgressBar(15);
+
+        var promises = MASTER_URLS.map(function(url, idx) {
+            return fetch(url)
+                .then(function(r) {
+                    if (!r.ok) throw new Error('HTTP ' + r.status);
+                    return r.text();
+                })
+                .then(function(rawText) {
+                    var parsed = parsePipelineData(rawText, url, idx);
+                    logToConsole('Pipeline ' + (idx + 1) + ' synced: ' + parsed.length + ' items.', 'success');
+                    return parsed;
+                })
+                .catch(function(err) {
+                    logToConsole('Pipeline ' + (idx + 1) + ' skipped: ' + err.message, 'warn');
+                    return [];
+                });
+        });
+
+        var results = await Promise.allSettled(promises);
+        updateProgressBar(60);
+
+        var combinedTools = [];
+
+        if (Array.isArray(dashboardDbList)) {
+            dashboardDbList.forEach(function(t) {
+                if (!t || t.approvalStatus === 'Pending') return;
+                var expired = t.isFeatured && t.expireTimestamp && Date.now() >= t.expireTimestamp;
+                combinedTools.push({
+                    name: t.name || 'AI Tool',
+                    link: sanitizeUrl(t.link),
+                    logo: t.logo || '',
+                    status: (t.isFeatured && !expired) ? 'Featured' : 'Active',
+                    task: t.category || 'General AI',
+                    short_description: t.description || 'Advanced AI Module.'
+                });
+            });
+        }
+
+        results.forEach(function(res) {
+            if (res.status === 'fulfilled' && Array.isArray(res.value)) {
+                res.value.forEach(function(tool) {
+                    if (tool) combinedTools.push(tool);
+                });
+            }
+        });
+
+        updateProgressBar(80);
+
+        var uniqueMap = new Map();
+        combinedTools.forEach(function(tool) {
+            var key = (tool.name || '').toLowerCase().trim();
+            if (key && !uniqueMap.has(key)) uniqueMap.set(key, tool);
+        });
+        allTools = Array.from(uniqueMap.values());
+
+        allTools.sort(function(a, b) {
+            var aName = (a.name || '').toLowerCase();
+            var bName = (b.name || '').toLowerCase();
+            var aIsSuper = superstarTools.some(function(t) { return aName.indexOf(t) !== -1; }) ? 1 : 0;
+            var bIsSuper = superstarTools.some(function(t) { return bName.indexOf(t) !== -1; }) ? 1 : 0;
+            return bIsSuper - aIsSuper;
+        });
+
+        filteredTools = allTools.slice();
+
+        var loadingEl = document.getElementById('loading');
+        var toolsGridEl = document.getElementById('toolsGrid');
+        if (loadingEl) loadingEl.classList.add('d-none');
+        if (toolsGridEl) toolsGridEl.classList.remove('d-none');
+
+        var topCounterEl = document.getElementById('topCounter');
+        if (topCounterEl) topCounterEl.innerText = allTools.length.toLocaleString() + '+';
+
+        var countDiv = document.getElementById('consoleTotalCount');
+        if (countDiv) countDiv.innerText = allTools.length.toLocaleString() + ' nodes';
+
+        calculateCategoryCounts();
+        updateFavoritesCount();
+        initFuseSearch();
+        updateProgressBar(100);
+        renderNextBatch();
+        checkAndTriggerUrlTool();
+
+    } catch (err) {
+        logToConsole('Critical failure: ' + err.message, 'error');
+        var loadingEl = document.getElementById('loading');
+        if (loadingEl) loadingEl.innerHTML = '<span class="text-danger">[ERROR]: Database sync failed. Check console.</span>';
+    }
+}
+
+function parsePipelineData(rawText, url, idx) {
+    var tools = [];
+    var trimmed = rawText.trim();
+
+    if (url.indexOf('.json') !== -1 || trimmed.charAt(0) === '[' || trimmed.charAt(0) === '{') {
+        try {
+            var jsonData = JSON.parse(trimmed);
+            if (Array.isArray(jsonData)) {
+                jsonData.forEach(function(t) {
+                    if (!t) return;
+                    var parsed = normalizeTool(t);
+                    if (parsed) tools.push(parsed);
+                });
+            } else if (jsonData && Array.isArray(jsonData.tools)) {
+                jsonData.tools.forEach(function(t) {
+                    if (!t) return;
+                    var parsed = normalizeTool(t);
+                    if (parsed) tools.push(parsed);
+                });
+            }
+        } catch (e) {
+            logToConsole('Pipeline ' + (idx + 1) + ' JSON parse error.', 'warn');
+        }
+    }
+    else if (trimmed.indexOf('- [') !== -1 && trimmed.indexOf('](') !== -1) {
+        var lines = trimmed.split('\n');
+        lines.forEach(function(line) {
+            var match = line.match(/-\s*\[(.*?)\]\((.*?)\)(.*)/);
+            if (match) {
+                var name = match[1].trim();
+                var link = match[2].trim();
+                var desc = match[3] ? match[3].replace(/`.*?`/g, '').replace(/[\[\]]/g, '').trim() : '';
+                if (desc.charAt(0) === '-') desc = desc.substring(1).trim();
+                tools.push({
+                    name: name,
+                    link: link,
+                    logo: '',
+                    status: 'Active',
+                    task: 'General AI',
+                    short_description: desc || 'Advanced AI Tool.'
+                });
+            }
+        });
+    }
+    else if (trimmed.indexOf('ChatGPT') !== -1 || trimmed.indexOf('Google Gemini') !== -1) {
+        var lines = trimmed.split('\n').map(function(l) { return l.trim(); }).filter(function(l) { return l !== ''; });
+        var startIndex = -1;
+        for (var i = 0; i < lines.length; i++) {
+            if (lines[i].toLowerCase() === 'chatgpt') { startIndex = i; break; }
+        }
+        if (startIndex >= 0) {
+            for (var i = startIndex; i < lines.length; i += 7) {
+                if (i + 6 < lines.length) {
+                    tools.push({
+                        name: lines[i],
+                        link: lines[i + 3] || lines[i + 1],
+                        logo: lines[i + 2],
+                        status: lines[i + 4] === 'OK' ? 'Active' : lines[i + 4],
+                        task: lines[i + 5],
+                        short_description: lines[i + 6]
+                    });
+                }
+            }
+        }
+    }
+
+    return tools;
+}
+
+function normalizeTool(t) {
+    if (!t) return null;
+    var nameVal = t.name || t.handle || t.title || 'AI Tool';
+    if (t.handle && !t.name) nameVal = t.handle.replace(/-/g, ' ').toUpperCase();
+    var taskVal = t.task || t.category || t.type || t.tags || 'General AI';
+    if (Array.isArray(taskVal)) taskVal = taskVal.join(', ');
+    var descVal = t.shortDescription || t.short_description || t.description || t.summary || 'Advanced System Node.';
+    var nameLower = nameVal.toLowerCase();
+    var descLower = String(descVal).toLowerCase();
+    var taskLower = String(taskVal).toLowerCase();
+    if (nameLower.indexOf('crewai') !== -1 || nameLower.indexOf('autogen') !== -1 || nameLower.indexOf('swarm') !== -1 || nameLower.indexOf('chatdev') !== -1) {
+        taskVal = 'AI Swarm';
+    } else if (nameLower.indexOf('ollama') !== -1 || nameLower.indexOf('lm studio') !== -1 || nameLower.indexOf('jan') !== -1 || nameLower.indexOf('local') !== -1 || descLower.indexOf('offline') !== -1) {
+        taskVal = 'Local AI';
+    } else if (taskLower.indexOf('agent') !== -1 || nameLower.indexOf('agent') !== -1 || descLower.indexOf('agent') !== -1) {
+        taskVal = 'AI Agent';
+    }
+    var finalLink = sanitizeUrl(t.website || t.link || t.url);
+    if (!finalLink) finalLink = getFallbackUrl(nameVal);
+    return {
+        name: nameVal,
+        link: finalLink,
+        logo: t.logo || '',
+        status: t.status || 'Active',
+        task: String(taskVal),
+        short_description: String(descVal)
+    };
+}
+
+async function fetchDashboardDatabase() {
+    try {
+        var res = await fetch(DASHBOARD_URL);
+        if (!res.ok) throw new Error('HTTP ' + res.status);
+        dashboardDbList = await res.json();
+        logToConsole('Dashboard DB online. Records: ' + dashboardDbList.length, 'success');
+        filterByRelease('featured');
+    } catch (e) {
+        logToConsole('Dashboard DB offline. Using fallback.', 'warn');
+        renderCarouselLayout(null, 'featured');
+    }
+}
+
+function filterByRelease(timeline) {
+    currentTimelineMode = timeline;
+    var relDropdown = document.getElementById('releaseDropdown');
+    if (relDropdown) relDropdown.innerHTML = '🌟 ' + timeline.charAt(0).toUpperCase() + timeline.slice(1);
+    var now = Date.now();
+    if (timeline === 'featured') {
+        var activeFeatured = [];
+        if (Array.isArray(dashboardDbList) && dashboardDbList.length > 0) {
+            activeFeatured = dashboardDbList.filter(function(tool) {
+                if (tool.isFeatured !== true) return false;
+                if (tool.approvalStatus === 'Pending') return false;
+                if (!tool.expireTimestamp) return true;
+                return now < tool.expireTimestamp;
+            });
+        }
+        if ((!activeFeatured || activeFeatured.length === 0) && allTools.length > 0) {
+            activeFeatured = allTools.slice(0, 6);
+        }
+        renderCarouselLayout(activeFeatured, 'featured');
+    } else {
+        var filtered = [];
+        if (Array.isArray(dashboardDbList) && dashboardDbList.length > 0) {
+            filtered = dashboardDbList.filter(function(t) {
+                if (!t.releaseDate || t.approvalStatus === 'Pending') return false;
+                var days = (now - new Date(t.releaseDate).getTime()) / 86400000;
+                if (timeline === 'today') return days >= 0 && days <= 1;
+                if (timeline === 'week') return days >= 0 && days <= 7;
+                if (timeline === 'month') return days >= 0 && days <= 30;
+                if (timeline === 'year') return days >= 0 && days <= 365;
+                return true;
+            });
+        }
+        renderCarouselLayout(filtered, 'logos');
+    }
+}
+
+function renderCarouselLayout(list, mode) {
+    var inner = document.getElementById('unifiedCarouselInner');
+    if (!inner) return;
+    if (!list || list.length === 0) {
+        inner.innerHTML = '<div class="carousel-item active text-center text-secondary font-mono py-4 text-xs">[INFO]: Standard Active Cluster Nodes.</div>';
+        return;
+    }
+    var html = '';
+    if (mode === 'featured') {
+        var perSlide = window.innerWidth <= 768 ? 1 : 3;
+        for (var i = 0; i < list.length; i += perSlide) {
+            var chunk = list.slice(i, i + perSlide);
+            var cards = '';
+            chunk.forEach(function(t) {
+                var link = sanitizeUrl(t.link) || getFallbackUrl(t.name);
+                var logo = t.logo || 'https://www.google.com/s2/favicons?sz=128&domain=' + encodeURIComponent(link);
+                cards += '<div class="col-12 col-md-4"><div class="app-card featured-card-style"><a href="' + escapeHTML(link) + '" target="_blank" class="app-card-anchor"><div class="app-card-header mb-2"><div class="app-card-title-wrapper"><img src="' + escapeHTML(logo) + '" class="rounded bg-black p-1 flex-shrink-0" style="width:28px;height:28px" loading="lazy" onerror="this.onerror=null;this.src=\'https://www.google.com/s2/favicons?sz=128&domain=allalo.com\'"><h6 class="app-card-title" title="' + escapeHTML(t.name) + '">' + escapeHTML(t.name) + '</h6></div><span class="featured-badge-tag app-card-badge">' + escapeHTML(t.badge || 'PRO') + '</span></div><p class="text-secondary line-clamp-2 m-0" style="font-size:11px">' + escapeHTML(t.description || t.short_description || 'Verified sponsor framework node.') + '</p></a><div class="mt-2 text-end"><button class="info-btn" onclick="openToolDetailModal(\'' + escapeHTML(t.name).replace(/'/g, "\\'") + '\')">🔗 Info Page</button></div></div></div>';
+            });
+            html += '<div class="carousel-item ' + (i === 0 ? 'active' : '') + '"><div class="row g-2">' + cards + '</div></div>';
+        }
+    } else {
+        var perSlide = window.innerWidth <= 768 ? 2 : 6;
+        for (var i = 0; i < list.length; i += perSlide) {
+            var chunk = list.slice(i, i + perSlide);
+            var logos = '';
+            chunk.forEach(function(t) {
+                var link = sanitizeUrl(t.link) || getFallbackUrl(t.name);
+                var logo = t.logo || 'https://www.google.com/s2/favicons?sz=128&domain=' + encodeURIComponent(link);
+                logos += '<div class="col-6 col-md-2 text-center"><a href="' + escapeHTML(link) + '" target="_blank" class="text-decoration-none d-block mx-auto" style="max-width:70px"><div class="mini-release-circle"><img src="' + escapeHTML(logo) + '" class="mini-release-img" loading="lazy" onerror="this.onerror=null;this.src=\'https://www.google.com/s2/favicons?sz=128&domain=allalo.com\'"></div><p class="carousel-tool-name text-center mt-1">' + escapeHTML(t.name) + '</p></a></div>';
+            });
+            html += '<div class="carousel-item ' + (i === 0 ? 'active' : '') + '"><div class="row g-2 align-items-center py-3 bg-dark bg-opacity-10 border border-secondary border-opacity-10 rounded-4">' + logos + '</div></div>';
+        }
+    }
+    inner.innerHTML = html;
+    var c = document.getElementById('unifiedCarousel');
+    if (c && window.bootstrap) {
+        var inst = bootstrap.Carousel.getOrCreateInstance(c);
+        inst.to(0);
+    }
+}
+
+function renderNextBatch() {
+    var grid = document.getElementById('toolsGrid');
+    if (!grid) return;
+    var batch = filteredTools.slice(offset, offset + limit);
+    if (batch.length === 0 && offset === 0) {
+        grid.innerHTML = '<div class="col-12 text-center text-muted font-mono py-5">No metrics matching query nodes found inside master matrix.</div>';
+        return;
+    }
+    var htmlChunk = '';
+    batch.forEach(function(tool) {
+        var toolUrl = tool.link ? tool.link.trim() : '';
+        if (!toolUrl) toolUrl = getFallbackUrl(tool.name);
+        var primaryLogo = tool.logo || 'https://www.google.com/s2/favicons?sz=128&domain=' + encodeURIComponent(toolUrl);
+        var isFeaturedStyle = tool.status === 'Featured' ? 'featured-card-style' : '';
+        var isFeaturedBadge = tool.status === 'Featured'
+            ? '<span class="featured-badge-tag app-card-badge">FEATURED</span>'
+            : '<span class="badge bg-black text-indigo-400 border border-secondary uppercase app-card-badge" style="font-size:8px">' + escapeHTML(tool.status || 'Active') + '</span>';
+        
+        var isFav = userFavorites.includes(tool.name);
+        var isComp = compareSelectedList.some(c => c.name === tool.name);
+
+        htmlChunk += `
+        <div class="col-12 col-sm-6 col-lg-4">
+            <div class="app-card ${isFeaturedStyle}">
+                <a href="${escapeHTML(toolUrl)}" target="_blank" class="app-card-anchor">
+                    <div class="text-start w-100">
+                        <div class="app-card-header mb-2">
+                            <div class="app-card-title-wrapper">
+                                <img src="${escapeHTML(primaryLogo)}" class="rounded-2 object-cover bg-black p-1 flex-shrink-0" style="width:32px;height:32px" loading="lazy" onerror="this.onerror=null;this.src='https://www.google.com/s2/favicons?sz=128&domain=${encodeURIComponent(toolUrl)}'">
+                                <h6 class="app-card-title" title="${escapeHTML(tool.name)}">${escapeHTML(tool.name)}</h6>
+                            </div>
+                            ${isFeaturedBadge}
+                        </div>
+                        <span class="text-secondary font-mono uppercase d-block" style="font-size:9px">${escapeHTML(tool.task || 'General')}</span>
+                        <p class="text-secondary line-clamp-2 mt-2 m-0" style="font-size:11px">${escapeHTML(tool.short_description)}</p>
+                    </div>
+                </a>
+                <div class="card-action-bar">
+                    <button type="button" class="fav-btn ${isFav ? 'active' : ''}" onclick="toggleFavorite('${escapeHTML(tool.name).replace(/'/g, "\\'")}')">
+                        ${isFav ? '❤️ Saved' : '🤍 Save'}
+                    </button>
+                    <button type="button" class="info-btn" onclick="openToolDetailModal('${escapeHTML(tool.name).replace(/'/g, "\\'")}')">
+                        🔗 Page
+                    </button>
+                    <button type="button" class="compare-btn ${isComp ? 'active' : ''}" onclick="toggleCompare('${escapeHTML(tool.name).replace(/'/g, "\\'")}')">
+                        ${isComp ? '✓ Selected' : '⚔️ Compare'}
+                    </button>
+                </div>
+            </div>
+        </div>`;
+    });
+    grid.insertAdjacentHTML('beforeend', htmlChunk);
+    offset += limit;
+    var loadMoreContainer = document.getElementById('loadMoreContainer');
+    if (loadMoreContainer) loadMoreContainer.classList.toggle('d-none', offset >= filteredTools.length);
+}
+
+function performSearch() {
+    var query = currentSearchQuery.trim();
+    offset = 0;
+    
+    var grid = document.getElementById('toolsGrid');
+    if (grid) grid.innerHTML = '';
+    var carouselZone = document.getElementById('dynamicCarouselZone');
+
+    if (query === '') {
+        if (clearSearchBtnEl) clearSearchBtnEl.style.display = 'none';
+        if (searchWrapperEl) searchWrapperEl.classList.remove('has-content');
+        if (carouselZone) carouselZone.classList.remove('d-none');
+        updateProgrammaticSEO(currentCategory);
+        applyGlobalFilters();
+        return;
+    }
+
+    if (clearSearchBtnEl) clearSearchBtnEl.style.display = 'block';
+    if (searchWrapperEl) searchWrapperEl.classList.add('has-content');
+    if (carouselZone) carouselZone.classList.add('d-none');
+
+    updateProgrammaticSEO(query);
+
+    let keywords = extractKeywords(query);
+    let searchTokens = new Set(keywords);
+
+    keywords.forEach(kw => {
+        for (var key in dictionary) {
+            if (key === kw || dictionary[key].includes(kw)) {
+                dictionary[key].slice(0, 3).forEach(syn => searchTokens.add(syn));
+            }
+        }
+    });
+
+    let searchQuery = Array.from(searchTokens).join(' ');
+
+    let rawResults = [];
+    if (fuseEngine) {
+        rawResults = fuseEngine.search(searchQuery);
+    } else {
+        rawResults = allTools.filter(t => 
+            (t.name + ' ' + t.task + ' ' + t.short_description).toLowerCase().includes(searchQuery.toLowerCase())
+        ).map(t => ({ item: t }));
+    }
+
+    filteredTools = rankAndSortTools(rawResults, query);
+
+    if (currentCategory !== 'All' && currentCategory !== 'Favorites') {
+        let catKey = currentCategory.replace(/_/g, ' ').toLowerCase();
+        filteredTools = filteredTools.filter(t => 
+            (t.task || '').toLowerCase().includes(catKey)
+        );
+    }
+
+    renderNextBatch();
+}
+
+if (searchInputEl) {
+    searchInputEl.addEventListener('input', function(e) {
+        currentSearchQuery = e.target.value.toLowerCase().trim();
+        clearTimeout(searchDebounceTimer);
+        searchDebounceTimer = setTimeout(performSearch, 200);
+    });
+}
+
+function clearSearchField() {
+    if (searchInputEl) searchInputEl.value = '';
+    currentSearchQuery = '';
+    if (clearSearchBtnEl) clearSearchBtnEl.style.display = 'none';
+    if (searchWrapperEl) searchWrapperEl.classList.remove('has-content');
+    var carouselZone = document.getElementById('dynamicCarouselZone');
+    if (carouselZone) carouselZone.classList.remove('d-none');
+    offset = 0;
+    var grid = document.getElementById('toolsGrid');
+    if (grid) grid.innerHTML = '';
+    updateProgrammaticSEO('All');
+    applyGlobalFilters();
+}
+
+function filterByCategory(category) {
+    currentCategory = category;
+    offset = 0;
+    var grid = document.getElementById('toolsGrid');
+    if (grid) grid.innerHTML = '';
+    ['All', 'AI_Agent', 'AI_Swarm', 'Local_AI', 'Favorites'].forEach(function(cat) {
+        var btn = document.getElementById('btn-' + cat);
+        if (btn) btn.classList.toggle('active', cat.replace(/_/g, ' ') === category);
+    });
+    updateProgrammaticSEO(category);
+    if (currentSearchQuery) performSearch(); else applyGlobalFilters();
+}
+
+function filterByFavorites() {
+    filterByCategory('Favorites');
+}
+
+function filterByTag(tag) {
+    if (searchInputEl) searchInputEl.value = tag;
+    currentSearchQuery = tag;
+    performSearch();
+}
+
+function toggleFavorite(toolName) {
+    var idx = userFavorites.indexOf(toolName);
+    if (idx > -1) {
+        userFavorites.splice(idx, 1);
+    } else {
+        userFavorites.push(toolName);
+    }
+    localStorage.setItem('allalo_favorites', JSON.stringify(userFavorites));
+    updateFavoritesCount();
+    
+    offset = 0;
+    var grid = document.getElementById('toolsGrid');
+    if (grid) grid.innerHTML = '';
+    if (currentCategory === 'Favorites') applyGlobalFilters(); else renderNextBatch();
+}
+
+function updateFavoritesCount() {
+    var cntFav = document.getElementById('cnt-fav');
+    if (cntFav) cntFav.innerText = '(' + userFavorites.length + ')';
+}
+
+function toggleCompare(toolName) {
+    var tool = allTools.find(t => t.name === toolName);
+    if (!tool) return;
+    
+    var idx = compareSelectedList.findIndex(c => c.name === toolName);
+    if (idx > -1) {
+        compareSelectedList.splice(idx, 1);
+    } else {
+        if (compareSelectedList.length >= 3) {
+            alert('⚠️ Matrix Comparison Limit: You can compare up to 3 tools at a time.');
+            return;
+        }
+        compareSelectedList.push(tool);
+    }
+
+    var floatBar = document.getElementById('compareFloatBar');
+    var countEl = document.getElementById('compareCount');
+    if (floatBar && countEl) {
+        countEl.innerText = compareSelectedList.length;
+        floatBar.classList.toggle('d-none', compareSelectedList.length === 0);
+    }
+
+    offset = 0;
+    var grid = document.getElementById('toolsGrid');
+    if (grid) grid.innerHTML = '';
+    renderNextBatch();
+}
+
+function clearComparisonList() {
+    compareSelectedList = [];
+    var floatBar = document.getElementById('compareFloatBar');
+    if (floatBar) floatBar.classList.add('d-none');
+    offset = 0;
+    var grid = document.getElementById('toolsGrid');
+    if (grid) grid.innerHTML = '';
+    renderNextBatch();
+}
+
+function openComparisonModal() {
+    if (compareSelectedList.length === 0) return;
+    var container = document.getElementById('comparisonModalContent');
+    if (!container) return;
+
+    var colsHtml = compareSelectedList.map(t => {
+        var link = sanitizeUrl(t.link) || getFallbackUrl(t.name);
+        return `
+        <div class="col-12 col-md-${12 / compareSelectedList.length}">
+            <div class="p-3 rounded-4 h-100" style="background: var(--bg-secondary); border: 1px solid var(--glass-border);">
+                <h5 class="text-white fw-bold mb-2">${escapeHTML(t.name)}</h5>
+                <span class="badge bg-indigo-500 text-white mb-3" style="font-size:10px">${escapeHTML(t.task)}</span>
+                <p class="text-secondary" style="font-size:12px; min-height:60px;">${escapeHTML(t.short_description)}</p>
+                <hr style="border-color: var(--glass-border);">
+                <div class="d-flex flex-column gap-2 text-xs" style="font-size:12px;">
+                    <div><span class="text-muted">Status:</span> <strong class="text-success">${escapeHTML(t.status || 'Active')}</strong></div>
+                    <div><span class="text-muted">Direct Link:</span> <a href="${escapeHTML(link)}" target="_blank" class="text-info text-truncate d-block">Visit Web ↗</a></div>
+                </div>
+            </div>
+        </div>`;
+    }).join('');
+
+    container.innerHTML = `<div class="row g-3">${colsHtml}</div>`;
+    var overlay = document.getElementById('comparisonModalOverlay');
+    if (overlay && window.bootstrap) new bootstrap.Modal(overlay).show();
+}
+
+function applyGlobalFilters() {
+    if (currentCategory === 'All') {
+        filteredTools = allTools.slice();
+    } else if (currentCategory === 'Favorites') {
+        filteredTools = allTools.filter(t => userFavorites.includes(t.name));
+    } else {
+        var key = currentCategory.replace(/_/g, ' ').toLowerCase();
+        filteredTools = allTools.filter(function(t) {
+            var text = ((t.task || '') + ' ' + (t.name || '') + ' ' + (t.short_description || '')).toLowerCase();
+            return text.indexOf(key) !== -1;
+        });
+    }
+    renderNextBatch();
+}
+
+function calculateCategoryCounts() {
+    var cntAll = document.getElementById('cnt-all');
+    if (cntAll) cntAll.innerText = '(' + allTools.length.toLocaleString() + ')';
+    var agent = 0, swarm = 0, local = 0;
+    for (var i = 0; i < allTools.length; i++) {
+        var text = ((allTools[i].task || '') + ' ' + (allTools[i].name || '') + ' ' + (allTools[i].short_description || '')).toLowerCase();
+        if (text.indexOf('agent') !== -1) agent++;
+        if (text.indexOf('swarm') !== -1 || text.indexOf('multi-agent') !== -1 || text.indexOf('crew') !== -1) swarm++;
+        if (text.indexOf('local') !== -1 || text.indexOf('offline') !== -1 || text.indexOf('ollama') !== -1 || text.indexOf('llama') !== -1) local++;
+    }
+    var cntAgent = document.getElementById('cnt-agent');
+    var cntSwarm = document.getElementById('cnt-swarm');
+    var cntLocal = document.getElementById('cnt-local');
+    if (cntAgent) cntAgent.innerText = '(' + agent.toLocaleString() + ')';
+    if (cntSwarm) cntSwarm.innerText = '(' + swarm.toLocaleString() + ')';
+    if (cntLocal) cntLocal.innerText = '(' + local.toLocaleString() + ')';
+}
+
+function unlockAdminPanel() {
+    var s = document.getElementById('adminAccessState');
+    var l = document.getElementById('adminLockedState');
+    if (s && !s.classList.contains('d-none')) return;
+    var pin = prompt('Enter Master Admin Security Key [PIN]:');
+    if (pin === '2026') {
+        if (s) s.classList.remove('d-none');
+        if (l) l.classList.add('d-none');
+        logToConsole('Admin terminal workspace unlocked successfully.', 'success');
+    } else {
+        alert('🚨 Access Violation: Security pin code mismatch!');
+    }
+}
+
+function generateAdminJson() {
+    var n = document.getElementById('admName').value.trim();
+    var l = document.getElementById('admLink').value.trim();
+    var c = document.getElementById('admCat').value;
+    var ls = document.getElementById('admLease').value;
+    var st = document.getElementById('admStatus').value;
+    var d = document.getElementById('admDesc').value.trim();
+    if (!n || !l || !d) { alert('Please fill in Name, Link and Description fields before generation.'); return; }
+    var feat = ls !== 'normal';
+    var out = {
+        name: n.toUpperCase(),
+        link: l,
+        logo: '',
+        category: c,
+        description: d,
+        releaseDate: new Date().toISOString().split('T')[0],
+        isFeatured: feat,
+        expireTimestamp: feat ? Date.now() + (parseFloat(ls) * 3600000) : null,
+        badge: feat ? 'FEATURED' : 'ACTIVE',
+        approvalStatus: st
+    };
+    alert('Generated Admin Database Object:\n\n' + JSON.stringify(out, null, 2));
+}
+
+function clearAdminFields() {
+    var n = document.getElementById('admName');
+    var l = document.getElementById('admLink');
+    var d = document.getElementById('admDesc');
+    if (n) n.value = '';
+    if (l) l.value = '';
+    if (d) d.value = '';
+}
+
+function startVoiceSearch() {
+    var SR = window.webkitSpeechRecognition || window.SpeechRecognition;
+    if (!SR) { alert('Voice search is not supported in this browser.'); return; }
+    var rec = new SR();
+    var btn = document.getElementById('voiceBtn');
+    rec.lang = 'en-US';
+    rec.interimResults = false;
+    rec.maxAlternatives = 1;
+    if (btn) btn.classList.add('recording');
+    rec.start();
+    rec.onresult = function(e) {
+        var tr = e.results[0][0].transcript.replace(/[\u0964\u002E]/g, '').trim();
+        if (searchInputEl) searchInputEl.value = tr;
+        currentSearchQuery = tr.toLowerCase().trim();
+        performSearch();
+    };
+    rec.onspeechend = function() { rec.stop(); if (btn) btn.classList.remove('recording'); };
+    rec.onerror = function(e) { if (btn) btn.classList.remove('recording'); logToConsole('Voice recognition error: ' + e.error, 'error'); };
+}
+
+function openConsoleModal() {
+    if (allTools.length > 0) {
+        var c = document.getElementById('consoleTotalCount');
+        if (c) c.innerText = allTools.length.toLocaleString() + ' nodes';
+    }
+    var d = document.getElementById('consoleLogs');
+    if (d) { d.innerHTML = consoleLogStorage.join(''); d.scrollTop = d.scrollHeight; }
+}
+
+function openModal(id) {
+    var data = {
+        contactModal: '<h6 style="color:var(--title-color);font-weight:700;margin-bottom:12px">Contact Us</h6><p style="line-height:1.8">For sponsorships, approvals, or feature requests:<br><br><strong style="color:#818cf8">📧 jasimubd3@gmail.com</strong></p>'
+    };
+    var mContent = document.getElementById('modalContent');
+    if (mContent) mContent.innerHTML = data[id] || 'Operational log details online.';
+    var overlay = document.getElementById('modalOverlay');
+    if (overlay && window.bootstrap) new bootstrap.Modal(overlay).show();
+}
+
+if (searchInputEl && searchWrapperEl) {
+    searchInputEl.addEventListener('focus', function() { searchWrapperEl.classList.add('focused'); });
+    document.addEventListener('click', function(e) {
+        if (searchWrapperEl && !searchWrapperEl.contains(e.target)) searchWrapperEl.classList.remove('focused');
+    });
+}
+
+var loadMoreBtn = document.getElementById('loadMoreBtn');
+if (loadMoreBtn) loadMoreBtn.addEventListener('click', renderNextBatch);
+
+window.addEventListener('resize', function() {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(function() {
+        if ((dashboardDbList && dashboardDbList.length > 0) || (allTools && allTools.length > 0)) {
+            filterByRelease(currentTimelineMode);
+        }
+    }, 150);
+});
+
+if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/sw.js').catch(err => {
+            console.log('ServiceWorker registration skipped or failed: ', err);
+        });
+    });
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    loadMegaDatabase();
+});
+
+// Programmatic Compare URL Engine (SEO Route)
+function checkAndTriggerCompareUrl() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const compareQuery = urlParams.get('compare');
+    
+    if (compareQuery) {
+        const parts = compareQuery.split('-vs-');
+        if (parts.length === 2) {
+            const tool1Name = decodeURIComponent(parts[0]).replace(/-/g, ' ');
+            const tool2Name = decodeURIComponent(parts[1]).replace(/-/g, ' ');
+            
+            const t1 = allTools.find(t => t.name.toLowerCase() === tool1Name.toLowerCase());
+            const t2 = allTools.find(t => t.name.toLowerCase() === tool2Name.toLowerCase());
+            
+            if (t1 && t2) {
+                renderCompareSeoView(t1, t2);
+            }
+        }
+    }
+}
+
+function renderCompareSeoView(t1, t2) {
+    document.title = `${t1.name} vs ${t2.name} Comparison — Features, Specs & Pricing | allalo AI`;
+    
+    let metaDesc = document.querySelector('meta[name="description"]');
+    if (metaDesc) {
+        metaDesc.setAttribute("content", `Compare ${t1.name} and ${t2.name} side by side. Check category, features, and specs to choose the best AI tool on allalo AI.`);
+    }
+
+    compareSelectedList = [t1, t2];
+    openComparisonModal();
+}
+
+window.addEventListener('load', function() {
+    setTimeout(checkAndTriggerCompareUrl, 1000);
+});
+</script>
+</body>
+</html>
