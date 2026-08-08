@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Block GitHub workflow internal files from indexing
+Disallow: /.github/
+
+# Sitemap Location
+Sitemap: https://ai.allalo.com/sitemap.xml

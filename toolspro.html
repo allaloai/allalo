@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tools Pro — Premium Proprietary AI Applications | allalo AI</title>
+    <meta name="description" content="Explore Tools Pro by allalo AI — a suite of powerful, high-performance proprietary AI software, specialized automation utilities, and enterprise-grade models designed by Jasim Uddin.">
+    <meta name="keywords" content="Tools Pro, proprietary AI tools, allalo AI applications, custom AI workflows, premium AI utilities, specialized AI generators">
+    <meta name="author" content="Jasim Uddin">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#030712">
+
+    <link rel="canonical" href="https://ai.allalo.com/toolspro.html">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://ai.allalo.com/favicon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://ai.allalo.com/favicon.png">
+
+    <!-- Fonts & Bootstrap -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Social Media Sharing Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ai.allalo.com/toolspro.html">
+    <meta property="og:title" content="Tools Pro — Premium Proprietary AI Suite">
+    <meta property="og:description" content="Exclusive, high-speed artificial intelligence tools engineered in-house by allalo AI.">
+    <meta property="og:image" content="https://ai.allalo.com/logo.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Tools Pro — allalo AI">
+    <meta name="twitter:image" content="https://ai.allalo.com/logo.png">
+
+    <!-- Schema Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "DataCatalog",
+      "name": "allalo AI Tools Pro",
+      "description": "Exclusive collection of high-performance proprietary AI software developed by allalo AI.",
+      "url": "https://ai.allalo.com/toolspro.html",
+      "creator": {
+        "@type": "Person",
+        "name": "Jasim Uddin"
+      }
+    }
+    </script>
+
+    <style>
+        :root {
+            --bg-color: #030712;
+            --bg-secondary: #0a0f1c;
+            --card-bg: rgba(15, 23, 42, 0.6);
+            --card-border: rgba(99, 102, 241, 0.2);
+            --text-primary: #f1f5f9;
+            --text-secondary: #94a3b8;
+            --text-muted: #64748b;
+            --accent-primary: #6366f1;
+            --accent-secondary: #8b5cf6;
+            --glass-bg: rgba(15, 23, 42, 0.7);
+            --glass-border: rgba(255, 255, 255, 0.08);
+            --warning: #f59e0b;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-secondary);
+            overflow-x: hidden;
+            min-height: 100vh;
+            line-height: 1.7;
+        }
+
+        .bg-mesh {
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            z-index: -1;
+            pointer-events: none;
+            background: 
+                radial-gradient(circle at 10% 20%, rgba(99, 102, 241, 0.12) 0%, transparent 40%),
+                radial-gradient(circle at 90% 80%, rgba(139, 92, 246, 0.1) 0%, transparent 40%);
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Space Grotesk', sans-serif;
+            color: var(--text-primary);
+            font-weight: 700;
+        }
+
+        .navbar-custom {
+            background: var(--glass-bg);
+            backdrop-filter: blur(16px);
+            border-bottom: 1px solid var(--glass-border);
+            padding: 16px 0;
+        }
+
+        .pro-header {
+            padding: 60px 0 40px;
+            text-align: center;
+        }
+
+        .pro-badge {
+            background: linear-gradient(135deg, var(--warning), #f97316);
+            color: #000;
+            font-size: 11px;
+            font-weight: 800;
+            padding: 4px 14px;
+            border-radius: 20px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            display: inline-block;
+            margin-bottom: 12px;
+        }
+
+        .pro-title {
+            font-size: clamp(2.2rem, 4.5vw, 3.2rem);
+            font-weight: 800;
+            background: linear-gradient(135deg, var(--text-primary) 0%, var(--accent-primary) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .pro-card {
+            background: var(--card-bg);
+            backdrop-filter: blur(12px);
+            border: 1px solid var(--card-border);
+            border-radius: 20px;
+            padding: 24px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .pro-card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--accent-primary), var(--accent-secondary));
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .pro-card:hover {
+            transform: translateY(-6px);
+            border-color: var(--accent-primary);
+            box-shadow: 0 20px 40px rgba(99, 102, 241, 0.2);
+        }
+
+        .pro-card:hover::before { opacity: 1; }
+
+        .pro-icon {
+            width: 48px; height: 48px;
+            border-radius: 14px;
+            background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 22px;
+            color: white;
+            margin-bottom: 16px;
+        }
+
+        .article-section {
+            background: var(--bg-secondary);
+            border: 1px solid var(--card-border);
+            border-radius: 24px;
+            padding: 40px;
+            margin: 50px 0;
+        }
+
+        .adsense-slot {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px dashed var(--glass-border);
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 12px;
+            margin: 30px 0;
+        }
+
+        .site-footer {
+            background: var(--bg-secondary);
+            border-top: 1px solid var(--card-border);
+            padding: 40px 0 30px;
+            margin-top: 60px;
+        }
+
+        .footer-link-custom {
+            color: var(--text-muted) !important;
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: 500;
+            transition: all 0.3s;
+        }
+        .footer-link-custom:hover { color: var(--accent-primary) !important; }
+    </style>
+</head>
+<body>
+    <div class="bg-mesh"></div>
+
+    <nav class="navbar navbar-custom sticky-top">
+        <div class="container d-flex justify-content-between align-items-center">
+            <a href="index.html" class="text-decoration-none d-flex align-items-center gap-2">
+                <div style="width:36px;height:36px;background:linear-gradient(135deg,var(--accent-primary),var(--accent-secondary));border-radius:10px;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:800;font-size:16px;">A</div>
+                <span class="fw-bold fs-5" style="color:var(--text-primary)">allalo AI</span>
+            </a>
+            <a href="index.html" class="btn btn-sm btn-outline-light rounded-pill px-3" style="font-size:12px;">← Main Directory</a>
+        </div>
+    </nav>
+
+    <header class="container pro-header">
+        <span class="pro-badge">PROPRIETARY SUITE</span>
+        <h1 class="pro-title">Tools Pro Applications</h1>
+        <p class="text-secondary mt-2" style="font-size: 15px; max-width: 680px; margin: 0 auto;">
+            Exclusive, high-speed artificial intelligence tools engineered in-house by allalo AI for enhanced productivity, automated generation, and specialized workflows.
+        </p>
+    </header>
+
+    <main class="container my-4">
+        <!-- Ad Placement Slot 1: Top -->
+        <div class="adsense-slot">
+            <span>[ Google AdSense Responsive Unit - Top Tools Pro ]</span>
+        </div>
+
+        <!-- Custom Tools Grid -->
+        <section class="mb-5">
+            <h4 class="mb-4 text-white">⚡ Featured In-House Tools</h4>
+            <div id="tools-container" class="row g-4">
+                <!-- Pro Tool 1 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="pro-card">
+                        <div>
+                            <div class="pro-icon">🧠</div>
+                            <h5 class="text-white fw-bold mb-2">Prompt Architect Pro</h5>
+                            <span class="badge bg-indigo-500 bg-opacity-20 text-indigo-400 mb-3" style="font-size:10px; border: 1px solid rgba(99,102,241,0.3);">Optimization Engine</span>
+                            <p class="text-secondary" style="font-size: 13px;">Advanced prompt engineering tool designed to transform simple text ideas into highly detailed, multi-step system prompts for Midjourney, ChatGPT, and Claude.</p>
+                        </div>
+                        <div class="mt-4">
+                            <a href="tools/prompt-architect.html" class="btn btn-sm btn-primary w-100 rounded-pill font-mono fw-bold py-2">Launch Tool ↗</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pro Tool 2 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="pro-card">
+                        <div>
+                            <div class="pro-icon">⚙️</div>
+                            <h5 class="text-white fw-bold mb-2">Schema & Meta Generator</h5>
+                            <span class="badge bg-indigo-500 bg-opacity-20 text-indigo-400 mb-3" style="font-size:10px; border: 1px solid rgba(99,102,241,0.3);">SEO Automation</span>
+                            <p class="text-secondary" style="font-size: 13px;">Automated utility that generates valid SoftwareApplication and Article JSON-LD schemas along with optimized open-graph metadata for web developers.</p>
+                        </div>
+                        <div class="mt-4">
+                            <a href="tools/schema-generator.html" class="btn btn-sm btn-primary w-100 rounded-pill font-mono fw-bold py-2">Launch Tool ↗</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pro Tool 3 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="pro-card">
+                        <div>
+                            <div class="pro-icon">📊</div>
+                            <h5 class="text-white fw-bold mb-2">Swarm Pipeline Inspector</h5>
+                            <span class="badge bg-indigo-500 bg-opacity-20 text-indigo-400 mb-3" style="font-size:10px; border: 1px solid rgba(99,102,241,0.3);">AI Analytics</span>
+                            <p class="text-secondary" style="font-size: 13px;">Real-time inspection tool for tracking autonomous AI agent workflows, monitoring token throughput, and checking API endpoint integrity.</p>
+                        </div>
+                        <div class="mt-4">
+                            <a href="tools/swarm-inspector.html" class="btn btn-sm btn-primary w-100 rounded-pill font-mono fw-bold py-2">Launch Tool ↗</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ad Placement Slot 2: Middle -->
+        <div class="adsense-slot">
+            <span>[ Google AdSense In-Article Responsive Unit ]</span>
+        </div>
+
+        <!-- SEO Article (300+ Words for AdSense Quality Compliance) -->
+        <article class="article-section">
+            <h3 class="text-white fw-bold mb-3">Empowering Next-Generation AI Workflows with Tools Pro</h3>
+            <p class="text-secondary" style="font-size: 15px;">
+                As the landscape of artificial intelligence continues to expand exponentially, developers, content creators, and enterprise teams require specialized software tailored to specific execution bottlenecks. While our primary directory indexes over 21,821+ third-party tools, <strong>Tools Pro</strong> represents our proprietary suite of dedicated AI utilities engineered in-house by allalo AI.
+            </p>
+
+            <h5 class="text-white fw-bold mt-4 mb-2">Why Custom-Engineered AI Utilities Matter in 2026</h5>
+            <p class="text-secondary" style="font-size: 15px;">
+                Generic large language models provide powerful general-purpose capabilities, but specialized tasks require tailored prompt chaining, structured JSON outputs, and optimized client-side processing. The tools featured within the <strong>Tools Pro</strong> catalog are built to address specific core challenges:
+            </p>
+
+            <ul class="text-secondary" style="font-size: 15px; padding-left: 20px;">
+                <li class="mb-2"><strong>Zero-Latency Execution:</strong> Lightweight, browser-optimized code structures that execute instantly without requiring heavy server overhead.</li>
+                <li class="mb-2"><strong>Precision Search & SEO Automation:</strong> Built-in support for generating Google-compliant structured data, meta descriptions, and semantic keywords.</li>
+                <li class="mb-2"><strong>Developer-Centric Workflows:</strong> Direct compatibility with local AI runtimes (e.g., Ollama, LM Studio) and autonomous agent frameworks.</li>
+            </ul>
+
+            <h5 class="text-white fw-bold mt-4 mb-2">Commitment to Quality and Performance</h5>
+            <p class="text-secondary m-0" style="font-size: 15px;">
+                Every tool published under the Tools Pro umbrella undergoes rigorous testing for output reliability, security, and performance. Whether you are building complex agentic pipelines or optimizing web metadata, Tools Pro provides reliable solutions built directly by the team at allalo AI.
+            </p>
+        </article>
+
+        <!-- Ad Placement Slot 3: Bottom -->
+        <div class="adsense-slot">
+            <span>[ Google AdSense Matched Content / Bottom Unit ]</span>
+        </div>
+    </main>
+
+    <footer class="site-footer text-center">
+        <div class="container">
+             <div class="d-flex justify-content-center flex-wrap gap-4 mb-3">
+                <a href="index.html" class="footer-link-custom fw-bold">Home Directory</a>
+                <a href="about.html" class="footer-link-custom fw-bold" target="_blank">About Us</a>
+                <a href="blog.html" class="footer-link-custom fw-bold" target="_blank">Blog</a>
+                <a href="toolspro.html" class="footer-link-custom fw-bold" target="_blank">Tools Pro</a>
+                <a href="privacy-policy.html" class="footer-link-custom" target="_blank">Privacy Policy</a>
+                <a href="terms.html" class="footer-link-custom" target="_blank">Terms & Conditions</a>
+            </div>
+            <p class="m-0 text-muted" style="font-size: 12px;">&copy; 2026 allalo AI. All rights reserved. Developed by Jasim Uddin.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Optional Dynamic Tools Data Loader (Safeguarded against null containers)
+		fetch('assets/json/tools--blog--data.json')
+		  .then(response => {
+			  if (!response.ok) throw new Error('Data file not found');
+			  return response.json();
+		  })
+          .then(tools => {
+            const container = document.getElementById('tools-container');
+            if (container && Array.isArray(tools) && tools.length > 0) {
+                container.innerHTML = tools.map(tool => `
+                  <div class="col-12 col-md-6 col-lg-4">
+                    <div class="pro-card">
+                        <div>
+                            <div class="pro-icon">🛠️</div>
+                            <h5 class="text-white fw-bold mb-2">${tool.title || 'AI Tool'}</h5>
+                            <span class="badge bg-indigo-500 bg-opacity-20 text-indigo-400 mb-3" style="font-size:10px;">Utility</span>
+                            <p class="text-secondary" style="font-size: 13px;">${tool.description || 'Custom Web Tool'}</p>
+                        </div>
+                        <div class="mt-4">
+                            <a href="${tool.url}" class="btn btn-sm btn-primary w-100 rounded-pill font-mono fw-bold py-2">Launch Tool ↗</a>
+                        </div>
+                    </div>
+                  </div>
+                `).join('');
+            }
+          })
+          .catch(err => console.log('Dynamic tools json skipped or not present.'));
+    </script>
+</body>
+</html>
