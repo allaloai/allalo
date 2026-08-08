@@ -1,0 +1,38 @@
+name: Generate Dynamic Sitemap & Blogs
+
+on:
+  schedule:
+    - cron: '0 0 * * *' # প্রতিদিন রাত ১২টায় অটোমেটিক রান হবে
+  workflow_dispatch: # ম্যানুয়ালি রান করার অপশন
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Use Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: Install dependencies
+        run: npm install node-fetch@2
+
+      # ১. প্রথমে ব্লগ আর্টিকেল জেনারেট হবে
+      - name: Run Programmatic Blog Generator
+        run: node generate-blogs.js
+
+      # ২. তারপর নতুন পোস্টসহ পুরো সাইটের সাইটম্যাপ তৈরি হবে
+      - name: Run Sitemap Generator
+        run: node generate-sitemap.js
+
+      # ৩. সবশেষে জেনারেট হওয়া ফাইলগুলো গিটহাবে পুশ হবে
+      - name: Commit and Push Changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add .
+          git commit -m "Auto-update sitemap.xml and blog posts" || exit 0
+          git push
