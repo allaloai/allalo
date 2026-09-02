@@ -9,7 +9,7 @@
     "url": "tools/age-calculator.html",
     "link": "tools/age-calculator.html",
     "blogUrl": "blog-post/how-to-choose-best-ai-agent-2026.html"
-  },
+  }
   {
     "id": "bmi-calculator",
     "title": "BMI Health Calculator",
@@ -32,5 +32,4 @@
     "link": "tools/solar-calculator.html",
     "blogUrl": "tools/solar-calculator.html"
   }
-    {
 ]
