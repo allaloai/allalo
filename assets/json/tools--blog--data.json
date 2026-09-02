@@ -30,17 +30,7 @@
     "description": "Selling Solar Electricity at 10.50 BDT/Unit: Complete 100 kW Commercial Plant Profit & Cost Model calculator.",
     "url": "tools/solar-calculator.html",
     "link": "tools/solar-calculator.html",
-    "blogUrl": "blog-post/rise-of-local-ai-models.html"
+    "blogUrl": "tools/solar-calculator.html"
   }
     {
-    "id": "bmi-calculator",
-    "title": "BMI Health Calculator1",
-    "name": "BMI Health Calculator",
-    "category": "utility",
-    "theme": "theme-emerald",
-    "description": "Evaluate body mass index and ideal weight range instantly with health recommendations.",
-    "url": "tools/bmi-calculator.html",
-    "link": "tools/bmi-calculator.html",
-    "blogUrl": "blog-post/rise-of-local-ai-models.html"
-  }
 ]
