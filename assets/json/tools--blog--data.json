@@ -21,15 +21,4 @@
     "link": "tools/bmi-calculator.html",
     "blogUrl": "blog-post/rise-of-local-ai-models.html"
   }
-  {
-    "id": "solar-calculator",
-    "title": "Rooftop solar project calculator",
-    "name": "Rooftop solar calculator",
-    "category": "utility",
-    "theme": "theme-emerald",
-    "description": "Selling Solar Electricity at 10.50 BDT/Unit: Complete 100 kW Commercial Plant Profit & Cost Model calculator.",
-    "url": "tools/solar-calculator.html",
-    "link": "tools/solar-calculator.html",
-    "blogUrl": "tools/solar-calculator.html"
-  }
 ]
